@@ -14,8 +14,10 @@ export const Container = styled.header`
         font-weight: 600;
     }
 
-    nav {
+    @media (min-width: 1024px) {
+        nav {
         display: flex;
+        visibility: visible;
         width: 45vw;
         justify-content: space-between;
         align-items: center;
@@ -28,5 +30,6 @@ export const Container = styled.header`
                 text-decoration: underline;
             }
         }
+    }
     }
 `

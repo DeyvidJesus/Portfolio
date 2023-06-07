@@ -4,8 +4,9 @@ export const Container = styled.main`
     width: 100vw;
     margin-top: 4rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 5rem;
 
     h1 {
         font-weight: 300;
@@ -44,6 +45,29 @@ export const Container = styled.main`
             &:first-child {
                 background: var(--aqua);
             }
+        }
+    }
+
+    @media(max-width: 768px) {
+        padding: 0 2rem;
+
+        .Animation {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    @media (max-width: 425px) {
+        justify-content: center;
+
+        .button-container a {
+            width: 110px;
+            padding: .4rem;
+        }
+
+        .Animation {
+            display: none;
+            visibility: hidden;
         }
     }
 `

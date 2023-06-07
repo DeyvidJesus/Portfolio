@@ -19,6 +19,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/styles/global.sass"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/styles/global.sass", "src/components/Menu/menu.js", "src/components/Burger/burger.js", "src/components/Menu/style.js", "src/components/Burger/style.js"],
   "exclude": ["node_modules"]
 }
