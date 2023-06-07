@@ -14,8 +14,35 @@ export const Container = styled.header`
         font-weight: 600;
     }
 
-    @media (min-width: 1024px) {
-        nav {
+    .bigger-menu {
+        display: flex;
+        visibility: visible;
+        width: 45vw;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: var(--white);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .responsive-menu {
+        display: none;
+        visibility: hidden;
+    }
+
+    @media (max-width: 768px) {
+        .bigger-menu {
+            display: none;
+            visibility: hidden;
+        }
+
+        .responsive-menu {
         display: flex;
         visibility: visible;
         width: 45vw;

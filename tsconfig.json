@@ -19,6 +19,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/styles/global.sass", "src/components/Menu/menu.js", "src/components/Burger/burger.js", "src/components/Menu/style.js", "src/components/Burger/style.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/styles/global.sass", "src/components/Sections/Header/Menu/menu.js", "src/components/Sections/Header/Burger/burger.js", "src/components/Sections/Header/Menu/style.js", "src/components/Sections/Header/Burger/style.js", "src/components/Header/Menu/menu.js"],
   "exclude": ["node_modules"]
 }
