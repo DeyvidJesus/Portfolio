@@ -5,7 +5,21 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    screens: {
+      sm: '320px'
+    },
+    colors: {
+      'black': '#000',
+      'white': '#FFF',
+      'light-gray': '#D2D2D2',
+      'dark-gray': '#1E1E1E',
+      'royal-blue': '#1649FF',
+      'link-blue': '#0057FF',
+    },
+    fontFamily: {
+      serif: ['Montserrat', 'serif'],
+      sansSerif: ['Poppins','sans-serif'],
+    }
   },
   plugins: [],
 }
