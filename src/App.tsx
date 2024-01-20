@@ -1,18 +1,18 @@
+import { Header } from "./components/Header";
+import { Main } from "./components/Main";
+import { About } from "./components/About";
+import { Projects } from "./components/Projects";
+
 function App() {
   return (
-    <main>
-      <small>Olá, me chamo</small>
-      <h1 className="text-4xl">Deyvid</h1>
-      <h2>Desenvolvedor Web</h2>
-      <div>
-        <button>Baixar CV 
-          <img src="/download.svg" alt="Ícone de download" />
-        </button>
-        <button>E-mail
-          <img src="/email.svg" alt="Ícone de e-mail" />
-        </button>
-      </div>
-    </main>
+    <>
+      <Header />
+      <main className="flex flex-col items-center bg-[#F0F0F0]">
+        <Main />
+        <About />
+        <Projects />
+      </main>
+    </>
   )
 }
 
