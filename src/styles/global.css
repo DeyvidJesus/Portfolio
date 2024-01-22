@@ -2,6 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 1080px) {
   html {
       font-size: 93.75%;
@@ -36,4 +40,22 @@
 .link:hover::before {
   width: 105%;
   transition-delay: 0.3s;
+}
+
+* {
+  scrollbar-width: 18px;
+  scrollbar-color: #1649FF #D2D2D2;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #D2D2D2;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1649FF;
+  border-radius: 20px;
 }
