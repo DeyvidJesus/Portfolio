@@ -2,6 +2,8 @@ import { Header } from "./components/Header";
 import { Main } from "./components/Main";
 import { About } from "./components/About";
 import { Projects } from "./components/Projects";
+import BackToTopButton from "./components/BackToTopBtn";
+import { Skills } from "./components/Skills";
 
 function App() {
   return (
@@ -11,7 +13,12 @@ function App() {
         <Main />
         <About />
         <Projects />
+        <Skills />
+        <BackToTopButton />
       </main>
+      <footer className="flex items-center justify-center p-4 text-lg font-sansSerif">
+        <p>Criado por <strong>DEYVID GONDIM</strong></p>
+      </footer>
     </>
   )
 }
