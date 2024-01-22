@@ -10,7 +10,7 @@ export function Header() {
         <ul className="w-full flex items-center font-serif font-medium justify-between">
           <li><a className="link" href="#Home">Início</a></li>
           <li><a className="link" href="#About">Sobre Mim</a></li>
-          <li><a className="py-6 link" href="#Projects">Projetos</a></li>
+          <li><a className="link" href="#Projects">Projetos</a></li>
           <li><a className="link" href="#Skills">Habilidades</a></li>
           <li><a href="https://github.com/DeyvidJesus" target="_blank"><img className="w-7" src="/githubIcon.svg" alt="" /></a></li>
           <li><a href="https://www.linkedin.com/in/deyvid-g/" target="_blank"><img className="w-7" src="/linkedinIcon.svg" alt="" /></a></li>
