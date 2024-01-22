@@ -8,6 +8,7 @@ export function Header() {
       <DropdownMenu />
       <nav className="sm:hidden md:flex justify-end md:w-3/5 lg:w-2/5 px-4">
         <ul className="w-full flex items-center font-serif font-medium justify-between">
+          <li><a className="link" href="#Home">Início</a></li>
           <li><a className="link" href="#About">Sobre Mim</a></li>
           <li><a className="py-6 link" href="#Projects">Projetos</a></li>
           <li><a className="link" href="#Skills">Habilidades</a></li>
