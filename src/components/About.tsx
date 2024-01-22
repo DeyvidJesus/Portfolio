@@ -8,7 +8,7 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 
 export function About() {
   return (
-    <section className='sm:w-full md:w-10/12 flex flex-col items-center'>
+    <section id="About" className='sm:w-full md:w-10/12 flex flex-col items-center'>
       <h2 className='font-serif font-semibold my-6 text-3xl border-b-2 border-royal-blue text-center'>Sobre Mim</h2>
       <Timeline>
         <TimelineItem className='my-4'>
