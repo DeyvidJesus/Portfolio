@@ -1,11 +1,11 @@
-import { DropdownMenu } from "./DropdownMenu";
 import '../styles/global.css';
+import { ResponsiveMenu } from "./ResponsiveMenu";
 
 export function Header() {
   return (
-    <header className="z-50 fixed bg-white w-screen h-14 flex items-center px-6 justify-between">
+    <header className="max-w-full fixed w-screen z-50 bg-white h-14 flex items-center px-6 justify-between">
       <p className="text-xl font-sansSerif font-bold text-dark-gray">Deyvid.dev</p>
-      <DropdownMenu />
+      <ResponsiveMenu />
       <nav className="sm:hidden md:flex justify-end md:w-3/5 lg:w-2/5 px-4">
         <ul className="w-full flex items-center font-serif font-medium justify-between">
           <li><a className="link" href="#Home">Início</a></li>
