@@ -35,7 +35,7 @@ export function Projects() {
                 </li>
               </ul>
             </div>
-            <div className="sm:w-full sm:h-64 md:h-80 lg:h-auto lg:w-2/5 bg-[url('nossasMulheres.svg')] bg-cover lg:border-l-2 rounded">
+            <div className="sm:w-full sm:h-64 md:h-80 lg:h-auto lg:w-2/5 bg-[url('/nossasMulheres.svg')] bg-cover lg:border-l-2 rounded">
             </div>
           </div>
         </li>
@@ -76,7 +76,7 @@ export function Projects() {
                 </li>
               </ul>
             </div>
-            <div className="sm:w-full sm:h-64 md:h-80 lg:h-auto lg:w-2/5 bg-[url('alldo.svg')] bg-cover lg:border-l-2 rounded"></div>
+            <div className="sm:w-full sm:h-64 md:h-80 lg:h-auto lg:w-2/5 bg-[url('/alldo.svg')] bg-cover lg:border-l-2 rounded"></div>
           </div>
         </li>
         <li className="flex flex-col items-center mb-16">
@@ -114,7 +114,7 @@ export function Projects() {
                 </li>
               </ul>
             </div>
-            <div className="sm:w-full sm:h-64 md:h-80 lg:h-auto lg:w-2/5 bg-[url('consuladoFitness.svg')] bg-cover lg:border-l-2 rounded">
+            <div className="sm:w-full sm:h-64 md:h-80 lg:h-auto lg:w-2/5 bg-[url('/consuladoFitness.svg')] bg-cover lg:border-l-2 rounded">
             </div>
           </div>
         </li>
@@ -151,7 +151,7 @@ export function Projects() {
                 </li>
               </ul>
             </div>
-            <div className="sm:w-full sm:h-64 md:h-80 lg:h-auto lg:w-2/5 bg-[url('designAgency.png')] bg-cover lg:border-l-2 rounded">
+            <div className="sm:w-full sm:h-64 md:h-80 lg:h-auto lg:w-2/5 bg-[url('/designAgency.png')] bg-cover lg:border-l-2 rounded">
             </div>
           </div>
         </li>
