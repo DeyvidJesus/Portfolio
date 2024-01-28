@@ -12,7 +12,7 @@ export function Projects() {
               </span>
               <p className="text-justify">Durante o curso técnico, integrei um time de 8 alunos em um projeto para <strong>agilizar a identificação e tratamento do câncer de mama</strong>. Minha contribuição central foi desenvolver a <strong>estrutura e validação dos formulários</strong>, assegurando a <strong>inserção precisa dos dados no banco</strong>. Essa experiência não apenas fortaleceu minha capacidade técnica, mas também ressaltou a importância da <strong>colaboração em equipe</strong> no desenvolvimento web para <strong>otimização de processos de saúde</strong>.</p>
               <p className="text-royal-blue flex my-4">O site foi retirado do ar, após o fim da campanha!</p>
-              <ul className="flex justify-around">
+              <ul className="flex justify-around sm:text-sm md:text-md">
                 <li className="flex flex-col items-center">
                   <img className="w-12" src="/htmlIcon.svg" alt="" />
                   HTML5
@@ -53,7 +53,7 @@ export function Projects() {
                 <a href="https://all-do.vercel.app" target="_blank" className="link text-royal-blue flex my-4 !mr-6">Site no ar!</a>
                 <a href="https://github.com/DeyvidJesus/all.do" target="_blank" className="link text-royal-blue flex my-4">Repositório do projeto</a>
               </span>
-              <ul className="flex justify-around">
+              <ul className="flex justify-around sm:text-sm md:text-md">
                 <li className="flex flex-col items-center">
                   <img className="w-12" src="/nextIcon.svg" alt="" />
                   NextJS
@@ -91,7 +91,7 @@ export function Projects() {
                 <a href="http://consuladofitness.atwebpages.com/" target="_blank" className="link text-royal-blue flex my-4 !mr-6">Site no ar!</a>
                 <a href="https://github.com/DeyvidJesus/consuladofitness" target="_blank" className="link text-royal-blue flex my-4">Repositório do projeto</a>
               </span>
-              <ul className="flex justify-around">
+              <ul className="flex justify-around sm:text-sm md:text-md">
                 <li className="flex flex-col items-center">
                   <img className="w-12" src="/htmlIcon.svg" alt="" />
                   HTML5
@@ -132,7 +132,7 @@ export function Projects() {
                 <a href="https://ddesign-agency.vercel.app/" target="_blank" className="link text-royal-blue flex my-4 !mr-6">Site no ar!</a>
                 <a href="https://github.com/DeyvidJesus/designAgency" target="_blank" className="link text-royal-blue flex my-4">Repositório do projeto</a>
               </span>
-              <ul className="flex justify-around">
+              <ul className="flex justify-around sm:text-sm md:text-md">
                 <li className="flex flex-col items-center">
                   <img className="w-12" src="/reactIcon.svg" alt="" />
                   React
