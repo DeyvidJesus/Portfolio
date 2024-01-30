@@ -28,7 +28,7 @@ export function About() {
         </TimelineItem>
         <TimelineItem className='my-4'>
           <TimelineOppositeContent className='!flex-none' color="secondary">
-          <p className='font-bold'>2021</p>
+          <p className='ml-1 font-bold'>2021</p>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot color='secondary' />
@@ -43,7 +43,7 @@ export function About() {
         </TimelineItem>
         <TimelineItem className='my-4'>
           <TimelineOppositeContent className='!flex-none' color="secondary">
-            <p className='ml-1 font-bold'>2022</p>
+            <p className='font-bold'>2022</p>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot color='secondary'/>
