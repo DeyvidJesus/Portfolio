@@ -10,7 +10,7 @@ export function Projects() {
                 <h3 className="text-xl font-sansSerif">Nossas Mulheres</h3>
                 <img className="w-8 ml-2" src="/laco.svg" alt="" />
               </span>
-              <p className="text-justify">Durante o curso técnico, integrei um time de 8 alunos em um projeto para <strong>agilizar a identificação e tratamento do câncer de mama</strong>. Minha contribuição central foi desenvolver a <strong>estrutura e validação dos formulários</strong>, assegurando a <strong>inserção precisa dos dados no banco</strong>. Essa experiência não apenas fortaleceu minha capacidade técnica, mas também ressaltou a importância da <strong>colaboração em equipe</strong> no desenvolvimento web para <strong>otimização de processos de saúde</strong>.</p>
+              <p className="text-justify">O projeto visava desenvolver um site para inscrições e divulgação de uma campanha de mamografia, contando com a participação de 7 alunos. Enfrentei dois <strong>principais desafios</strong>: <strong>validar dados</strong> para inserção correta no banco de dados e tornar o <strong>formulário mais intuitivo</strong> para um público mais velho. Para isso, <strong>criei expressões regulares</strong> e funções para validar os campos do formulário como RG e CPF, utilizando <strong>jQuery</strong> para facilitar a <strong>visualização e correção dos dados</strong> através da formatação dos mesmos. Com essas ações e o trabalho de marketing, alcançamos <strong>mais de 2 mil inscrições</strong> e reduzimos a taxa de evasão do site.</p>
               <p className="text-royal-blue flex my-4">O site foi retirado do ar, após o fim da campanha!</p>
               <ul className="flex justify-around sm:text-sm md:text-md">
                 <li className="flex flex-col items-center">
@@ -46,9 +46,9 @@ export function Projects() {
                 <h3 className="text-xl font-sansSerif">All.do</h3>
                 <img className="w-8 ml-2" src="/alldoIcon.svg" alt="" />
               </span>
-              <p className="text-justify">Com a capacidade de <strong>criar projetos</strong>, <strong>adicionar tarefas</strong> e personalizar a experiência com <strong>modo claro/escuro</strong>, o all.do visa ajudar na organização diária.
-                <br />
-                Apesar de ser um projeto individual, integrei <strong>MongoDB</strong> para armazenamento e utilizei <strong>integrações com Github e Facebook para autenticação</strong>. Enfrentei desafios ao aprender novas tecnologias, configurar logins sociais e fazer deploy do aplicativo, resultando em valiosas lições sobre padronização e configuração eficiente.</p>
+              <p className="text-justify">O projeto foi uma <strong>aplicação web de gerenciamento de tarefas e projetos</strong>, desenvolvida exclusivamente por mim. Enfrentei diversos desafios, incluindo a <strong>criação de rotas de API para operações CRUD</strong>, a implementação de <strong>autenticação social</strong> com o next-auth e o desenvolvimento do <strong>dark/light mode</strong>.
+
+                Após estudar a <strong>documentação do Next.js</strong>, criei e integrei as rotas de API. Para autenticação, configurei contas nos <strong>provedores sociais</strong> e os integrei à aplicação, por fim construi toda a paleta do modo escuro e apliquei a lógica utilizando <strong>contextos</strong> no mesmo. Com isso, consegui integrar a aplicação com um <strong>banco de dados MongoDB</strong>, estabelecendo uma aplicação totalmente funcional.</p>
               <span className="flex">
                 <a href="https://all-do.vercel.app" target="_blank" className="link text-royal-blue flex my-4 !mr-6">Site no ar!</a>
                 <a href="https://github.com/DeyvidJesus/all.do" target="_blank" className="link text-royal-blue flex my-4">Repositório do projeto</a>
@@ -86,7 +86,7 @@ export function Projects() {
                 <h3 className="text-xl font-sansSerif">Consulado Fitness</h3>
                 <img className="w-8 ml-2" src="/consuladoFitnessIcon.png" alt="" />
               </span>
-              <p className="text-justify">Desenvolvi um projeto responsável por criar treinos personalizados para os usuários. O destaque é justamente o <strong>algoritmo</strong> responsável pela <strong>geração dos treinos personalizados com base nas informações do usuário</strong> como idade, sexo, preferência de treino e quantidade de treinos semanais. O projeto abrangeu uma <strong>biblioteca de exercícios, perfil do usuário e download de treinos em planilhas Excel</strong>. O site está ativo online, oferecendo aos usuários acesso contínuo a treinos personalizados.</p>
+              <p className="text-justify">O Consulado Fitness foi um projeto de conclusão de curso desenvolvido por dois desenvolvedores, com o objetivo de criar um <strong>aplicativo que oferecesse treinos personalizados</strong> e uma biblioteca de exercícios para os usuários. Meu principal desafio foi <strong>criar um algoritmo</strong> eficiente <strong>para gerar os treinos</strong> e apresentá-los de forma organizada em tabelas. <strong>Após estruturar o algoritmo</strong> e estudar a documentação do PHP, <strong>implementei as funcionalidades gradualmente e refatorei o código</strong> para melhorar o desempenho. O resultado foi um site intuitivo, permitindo que os usuários acessem treinos de alta qualidade e gerenciem suas informações facilmente, proporcionando uma experiência completa de treinamento físico.</p>
               <span className="flex">
                 <a href="http://consuladofitness.atwebpages.com/" target="_blank" className="link text-royal-blue flex my-4 !mr-6">Site no ar!</a>
                 <a href="https://github.com/DeyvidJesus/consuladofitness" target="_blank" className="link text-royal-blue flex my-4">Repositório do projeto</a>
@@ -126,7 +126,7 @@ export function Projects() {
                 <img className="w-8 ml-2" src="/designAgencyIcon.svg" alt="" />
               </span>
               <p className="text-justify">
-                A página foi meticulosamente projetada para refletir a identidade inovadora da agência, destacando seu portfólio de forma envolvente e estratégica. Com uma abordagem <strong>reativa, estilo visual impecável e foco na conversão</strong>, a Landing Page se destaca como uma poderosa ferramenta de apresentação, convidando os visitantes a explorar e se envolver com a criatividade única da agência.
+                É uma <strong>Landing Page</strong> para uma agência de design fictícia, com o propósito de apresentar a empresa. Meu principal desafio foi trabalhar com <strong>responsividade</strong> em todo o projeto, onde foi necessário pensar em como manter o <strong>conteúdo bem distribuído</strong> mesmo em telas menores. Para isso, busquei inspiração em alguns designs e fui aplicando conceitos ao projeto. O resultado foi uma página encantadora que <strong>transmitia a identidade da empresa</strong> independentemente do dispositivo, sempre focando na valorização da marca.
               </p>
               <span className="flex">
                 <a href="https://ddesign-agency.vercel.app/" target="_blank" className="link text-royal-blue flex my-4 !mr-6">Site no ar!</a>
