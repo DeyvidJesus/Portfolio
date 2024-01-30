@@ -4,7 +4,7 @@ export function Projects() {
       <h2 className="font-serif font-semibold my-6 text-3xl border-b-2 border-royal-blue text-center">Experiências</h2>
       <ul>
         <li className="flex flex-col items-center mb-16">
-          <div className="flex justify-center bg-white w-5/6 rounded-lg shadow-xl sm:flex-col-reverse lg:flex-row">
+          <div className="flex justify-center bg-white rounded-lg shadow-xl sm:flex-col-reverse lg:flex-row">
             <div className="font-serif font-medium p-7 sm:w-full lg:w-3/5">
               <span className="flex items-center mb-2">
                 <h3 className="text-xl font-sansSerif">Nossas Mulheres</h3>
@@ -40,7 +40,7 @@ export function Projects() {
           </div>
         </li>
         <li className="flex flex-col items-center mb-16">
-          <div className="flex justify-center bg-white w-5/6 rounded-lg shadow-xl sm:flex-col-reverse lg:flex-row">
+          <div className="flex justify-center bg-white rounded-lg shadow-xl sm:flex-col-reverse lg:flex-row">
             <div className="font-serif font-medium p-7 sm:w-full lg:w-3/5">
               <span className="flex items-center mb-2">
                 <h3 className="text-xl font-sansSerif">All.do</h3>
@@ -80,7 +80,7 @@ export function Projects() {
           </div>
         </li>
         <li className="flex flex-col items-center mb-16">
-          <div className="flex justify-center bg-white w-5/6 rounded-lg shadow-xl sm:flex-col-reverse lg:flex-row">
+          <div className="flex justify-center bg-white rounded-lg shadow-xl sm:flex-col-reverse lg:flex-row">
             <div className="font-serif font-medium p-7 sm:w-full lg:w-3/5">
               <span className="flex items-center mb-2">
                 <h3 className="text-xl font-sansSerif">Consulado Fitness</h3>
@@ -119,7 +119,7 @@ export function Projects() {
           </div>
         </li>
         <li className="flex flex-col items-center mb-16">
-          <div className="flex justify-center bg-white w-5/6 rounded-lg shadow-xl sm:flex-col-reverse lg:flex-row">
+          <div className="flex justify-center bg-white rounded-lg shadow-xl sm:flex-col-reverse lg:flex-row">
             <div className="font-serif font-medium p-7 sm:w-full lg:w-3/5">
               <span className="flex items-center mb-2">
                 <h3 className="text-xl font-sansSerif">Design Agency</h3>
