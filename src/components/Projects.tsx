@@ -2,44 +2,44 @@ export function Projects() {
   return (
     <section id="Projects" className="sm:w-full md:w-10/12 flex flex-col items-center">
       <h2 className="font-serif font-semibold my-6 text-3xl border-b-2 border-royal-blue text-center">Experiências</h2>
-      <ul>
-        <li className="flex flex-col items-center mb-16">
-          <div className="flex justify-center bg-white rounded-lg shadow-xl sm:flex-col-reverse lg:flex-row">
-            <div className="font-serif font-medium p-7 sm:w-full lg:w-3/5">
-              <span className="flex items-center mb-2">
-                <h3 className="text-xl font-sansSerif">Nossas Mulheres</h3>
-                <img className="w-8 ml-2" src="/laco.svg" alt="" />
-              </span>
-              <p className="text-justify">O projeto visava desenvolver um site para inscrições e divulgação de uma campanha de mamografia. Enfrentei dois <strong>principais desafios</strong>: <strong>validar dados</strong> para inserção correta no banco de dados e tornar o <strong>formulário mais intuitivo</strong> para um público mais velho. Para isso, <strong>criei expressões regulares</strong> e funções para validar os campos do formulário como RG e CPF, utilizando <strong>jQuery</strong> para facilitar a <strong>visualização e correção dos dados</strong> através da formatação dos mesmos. Com essas ações e o trabalho de marketing, alcançamos <strong>mais de 2 mil inscrições</strong> e reduzimos a taxa de evasão do site.</p>
-              <p className="text-royal-blue flex my-4">O site foi retirado do ar, após o fim da campanha!</p>
-              <ul className="flex justify-around sm:text-sm md:text-md">
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/htmlIcon.svg" alt="" />
-                  HTML5
-                </li>
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/cssIcon.svg" alt="" />
-                  CSS3
-                </li>
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/phpIcon.svg" alt="" />
-                  PHP
-                </li>
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/mysqlIcon.svg" alt="" />
-                  MySQL
-                </li>
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/gitIcon.svg" alt="" />
-                  Git
-                </li>
-              </ul>
-            </div>
-            <div className="sm:w-full sm:h-64 md:h-80 lg:h-auto lg:w-2/5 bg-[url('/nossasMulheres.svg')] bg-cover lg:border-l-2 rounded">
-            </div>
+      <div className="flex flex-col items-center mb-16">
+        <div className="flex justify-center bg-white rounded-lg shadow-xl sm:flex-col-reverse lg:flex-row">
+          <div className="font-serif font-medium p-7 sm:w-full lg:w-3/5">
+            <span className="flex items-center mb-2">
+              <h3 className="text-xl font-sansSerif">Nossas Mulheres</h3>
+              <img className="w-8 ml-2" src="/laco.svg" alt="" />
+            </span>
+            <p className="text-justify">O projeto visava desenvolver um site para inscrições e divulgação de uma campanha de mamografia. Enfrentei dois <strong>principais desafios</strong>: <strong>validar dados</strong> para inserção correta no banco de dados e tornar o <strong>formulário mais intuitivo</strong> para um público mais velho. Para isso, <strong>criei expressões regulares</strong> e funções para validar os campos do formulário como RG e CPF, utilizando <strong>jQuery</strong> para facilitar a <strong>visualização e correção dos dados</strong> através da formatação dos mesmos. Com essas ações e o trabalho de marketing, alcançamos <strong>mais de 2 mil inscrições</strong> e reduzimos a taxa de evasão do site.</p>
+            <p className="text-royal-blue flex my-4">O site foi retirado do ar, após o fim da campanha!</p>
+            <ul className="flex justify-around sm:text-sm md:text-md">
+              <li className="flex flex-col items-center">
+                <img className="w-12" src="/htmlIcon.svg" alt="" />
+                HTML5
+              </li>
+              <li className="flex flex-col items-center">
+                <img className="w-12" src="/cssIcon.svg" alt="" />
+                CSS3
+              </li>
+              <li className="flex flex-col items-center">
+                <img className="w-12" src="/phpIcon.svg" alt="" />
+                PHP
+              </li>
+              <li className="flex flex-col items-center">
+                <img className="w-12" src="/mysqlIcon.svg" alt="" />
+                MySQL
+              </li>
+              <li className="flex flex-col items-center">
+                <img className="w-12" src="/gitIcon.svg" alt="" />
+                Git
+              </li>
+            </ul>
           </div>
-        </li>
-        <h2 className="font-serif font-semibold my-6 text-3xl border-b-2 border-royal-blue text-center">Projetos</h2>
+          <div className="sm:w-full sm:h-64 md:h-80 lg:h-auto lg:w-2/5 bg-[url('/nossasMulheres.svg')] bg-cover lg:border-l-2 rounded">
+          </div>
+        </div>
+      </div>
+      <h2 className="font-serif font-semibold my-8 text-3xl border-b-2 border-royal-blue text-center">Projetos</h2>
+      <ul>
         <li className="flex flex-col items-center mb-16">
           <div className="flex justify-center bg-white rounded-lg shadow-xl sm:flex-col-reverse lg:flex-row">
             <div className="font-serif font-medium p-7 sm:w-full lg:w-3/5">
