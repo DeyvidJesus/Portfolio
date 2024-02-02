@@ -39,6 +39,7 @@ export function Projects() {
             </div>
           </div>
         </li>
+        <h2 className="font-serif font-semibold my-6 text-3xl border-b-2 border-royal-blue text-center">Projetos</h2>
         <li className="flex flex-col items-center mb-16">
           <div className="flex justify-center bg-white rounded-lg shadow-xl sm:flex-col-reverse lg:flex-row">
             <div className="font-serif font-medium p-7 sm:w-full lg:w-3/5">
