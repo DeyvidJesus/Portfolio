@@ -29,7 +29,7 @@ function AppContent() {
         <Skills />
         <Contact />
       </main>
-      <footer className="border-t border-slate-200/60 bg-gradient-to-r from-white/90 via-skyglass/70 to-white/90 py-8 text-center text-sm text-slate-600 backdrop-blur-md dark:border-white/5 dark:bg-charcoal/70 dark:text-slate/80">
+      <footer className="border-t border-slate-200/60 bg-gradient-to-r via-skyglass/70 to-white/90 py-8 text-center text-sm text-slate-600 backdrop-blur-md dark:border-white/5 dark:bg-charcoal/70 dark:text-slate/80">
         <p>
           Construído por <strong className="bg-gradient-to-r from-aurora via-emerald-500 to-sunrise bg-clip-text text-transparent dark:text-neon">Deyvid Gondim</strong> · Desenvolvedor Fullstack · {new Date().getFullYear()}
         </p>
