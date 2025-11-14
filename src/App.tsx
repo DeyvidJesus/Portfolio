@@ -10,7 +10,16 @@ import { ThemeProvider } from './contexts/ThemeContext';
 
 function AppContent() {
   return (
-    <div className="min-h-screen bg-white dark:bg-night text-slate-900 dark:text-white transition-colors duration-300">
+    <div className="relative min-h-screen overflow-hidden bg-white dark:bg-night text-slate-900 dark:text-white transition-colors duration-300">
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute inset-x-0 top-0 h-[620px] bg-light-hero opacity-90 blur-[1px] dark:hidden" />
+        <div className="absolute inset-x-0 top-0 hidden h-[520px] bg-gradient-to-b from-charcoal/40 via-night/80 to-night dark:block" />
+        <div className="absolute -left-36 top-60 hidden h-96 w-96 rounded-full bg-aurora/20 blur-3xl dark:block" />
+        <div className="absolute right-[-10%] top-24 hidden h-80 w-80 rounded-full bg-neon/30 blur-3xl dark:block" />
+        <div className="absolute -right-32 top-40 h-80 w-80 rounded-full bg-[radial-gradient(circle_at_center,_rgba(255,231,243,0.6)_0%,_transparent_65%)] blur-3xl dark:hidden" />
+        <div className="absolute left-10 bottom-10 h-72 w-72 rounded-full bg-[radial-gradient(circle_at_center,_rgba(224,242,255,0.65)_0%,_transparent_65%)] blur-3xl dark:hidden" />
+      </div>
+
       <Header />
       <main className="relative overflow-hidden">
         <Main />
@@ -20,9 +29,9 @@ function AppContent() {
         <Skills />
         <Contact />
       </main>
-      <footer className="border-t border-slate-200 dark:border-white/5 bg-slate-100 dark:bg-charcoal/70 py-8 text-center text-sm text-slate-600 dark:text-slate/80">
+      <footer className="border-t border-slate-200/60 bg-gradient-to-r from-white/90 via-skyglass/70 to-white/90 py-8 text-center text-sm text-slate-600 backdrop-blur-md dark:border-white/5 dark:bg-charcoal/70 dark:text-slate/80">
         <p>
-          Construído por <strong className="text-slate-900 dark:text-neon">Deyvid Gondim</strong> · Desenvolvedor Fullstack · {new Date().getFullYear()}
+          Construído por <strong className="bg-gradient-to-r from-aurora via-emerald-500 to-sunrise bg-clip-text text-transparent dark:text-neon">Deyvid Gondim</strong> · Desenvolvedor Fullstack · {new Date().getFullYear()}
         </p>
       </footer>
       <BackToTopButton />

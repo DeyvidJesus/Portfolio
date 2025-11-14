@@ -25,14 +25,21 @@ export default {
         neon: '#4affc0',
         charcoal: '#1b324a',
         slate: '#c7d6e5',
-        smoke: '#23354b'
+        smoke: '#23354b',
+        sunrise: '#f8b37b',
+        coral: '#ff7f6a',
+        skyglass: '#e0f2ff',
+        blush: '#ffe7f3'
       },
       boxShadow: {
         glow: '0 0 35px rgba(74, 255, 192, 0.2)',
-        card: '0 15px 60px -20px rgba(12, 24, 38, 0.8)'
+        card: '0 15px 60px -20px rgba(12, 24, 38, 0.8)',
+        aurora: '0 20px 45px -25px rgba(31, 157, 109, 0.35)'
       },
       backgroundImage: {
-        'grid': 'linear-gradient(to right, rgba(31, 157, 109, 0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(31, 157, 109, 0.08) 1px, transparent 1px)'
+        'grid': 'linear-gradient(to right, rgba(31, 157, 109, 0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(31, 157, 109, 0.08) 1px, transparent 1px)',
+        'light-hero': 'radial-gradient(circle at 15% 20%, rgba(31, 157, 109, 0.18) 0, transparent 45%), radial-gradient(circle at 85% 15%, rgba(248, 179, 123, 0.28) 0, transparent 50%), radial-gradient(circle at 50% 90%, rgba(224, 242, 255, 0.55) 0, transparent 55%)',
+        'light-layer': 'linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(224, 242, 255, 0.9) 35%, rgba(255, 231, 243, 0.8) 100%)'
       },
       backgroundSize: {
         'grid-pattern': '40px 40px'

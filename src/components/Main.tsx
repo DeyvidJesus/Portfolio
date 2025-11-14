@@ -19,13 +19,16 @@ const HIGHLIGHTS = [
 export function Main() {
   return (
     <section id="inicio" className="relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-grid bg-grid-pattern opacity-20 dark:opacity-60" />
-      <div className="absolute -left-10 top-16 h-64 w-64 rounded-full bg-aurora/10 dark:bg-aurora/30 blur-3xl" />
-      <div className="absolute -right-10 bottom-10 h-64 w-64 rounded-full bg-aurora/5 dark:bg-neon/20 blur-3xl" />
+      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-white/80 via-skyglass/40 to-transparent dark:from-transparent dark:via-transparent dark:to-transparent" />
+      <div className="absolute inset-0 -z-10 bg-grid bg-grid-pattern opacity-30 dark:opacity-60" />
+      <div className="absolute -left-8 top-24 h-64 w-64 rounded-full bg-[radial-gradient(circle_at_center,_rgba(248,179,123,0.45)_0%,_transparent_60%)] blur-3xl dark:hidden" />
+      <div className="absolute -right-6 bottom-12 h-56 w-56 rounded-full bg-[radial-gradient(circle_at_center,_rgba(79,209,197,0.35)_0%,_transparent_60%)] blur-3xl dark:hidden" />
+      <div className="absolute -left-10 top-16 hidden h-64 w-64 rounded-full bg-aurora/20 blur-3xl dark:block" />
+      <div className="absolute -right-10 bottom-10 hidden h-64 w-64 rounded-full bg-neon/20 blur-3xl dark:block" />
 
       <div className="mx-auto flex min-h-screen max-w-[1440px] flex-col justify-center gap-12 px-6 pb-24 pt-32">
         <Reveal>
-          <span className="inline-flex items-center gap-2 rounded-full border border-slate-300 dark:border-white/10 bg-slate-100 dark:bg-white/5 px-4 py-1 text-sm font-medium text-aurora dark:text-neon">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/70 px-4 py-1 text-sm font-medium text-aurora shadow-[0_14px_28px_-22px_rgba(31,157,109,0.65)] backdrop-blur-sm dark:border-white/10 dark:bg-white/5 dark:text-neon">
             Desenvolvedor Fullstack · Arquitetura distribuída
           </span>
         </Reveal>
@@ -54,7 +57,7 @@ export function Main() {
             <a
               href="/Deyvid Gondim - Curriculo.pdf"
               download
-              className="group flex items-center gap-2 rounded-full border border-slate-300 dark:border-white/10 bg-slate-100 dark:bg-white/5 px-6 py-3 text-base font-semibold text-slate-900 dark:text-white transition hover:border-aurora dark:hover:border-neon/60 hover:text-aurora dark:hover:text-neon"
+              className="group flex items-center gap-2 rounded-full border border-white/70 bg-white/80 px-6 py-3 text-base font-semibold text-slate-900 shadow-[0_18px_38px_-28px_rgba(31,157,109,0.6)] backdrop-blur-sm transition hover:border-aurora hover:text-aurora dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:border-neon/60 dark:hover:text-neon"
             >
               Baixar CV
               <FiDownload className="transition-transform group-hover:-translate-y-0.5" />
@@ -65,7 +68,8 @@ export function Main() {
         <div className="grid gap-6 md:grid-cols-3">
           {HIGHLIGHTS.map((highlight, index) => (
             <Reveal key={highlight.label} delay={400 + index * 120}>
-              <div className="glass-panel flex h-full flex-col gap-3 rounded-2xl p-6">
+              <div className="glass-panel relative flex h-full flex-col gap-3 overflow-hidden rounded-2xl border border-white/60 bg-white/80 p-6 shadow-aurora backdrop-blur-sm dark:border-white/10 dark:bg-white/5 dark:shadow-card">
+                <span className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-aurora via-emerald-400 to-sunrise dark:from-neon dark:via-emerald-400 dark:to-aurora" />
                 <h3 className="text-lg font-semibold text-slate-900 dark:text-white">{highlight.label}</h3>
                 <p className="text-sm text-slate-700 dark:text-slate/90">{highlight.description}</p>
               </div>

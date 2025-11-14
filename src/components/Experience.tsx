@@ -58,7 +58,10 @@ const EXPERIENCES = [
 
 export function Experience() {
   return (
-    <section id="experiencias" className="mx-auto max-w-[1440px] px-6 py-24">
+    <section id="experiencias" className="relative mx-auto max-w-[1440px] px-6 py-24">
+      <div className="pointer-events-none absolute inset-y-0 left-4 -z-10 hidden w-2 rounded-full bg-gradient-to-b from-aurora/50 via-sunrise/40 to-skyglass/40 dark:block" />
+      <div className="pointer-events-none absolute inset-x-10 top-12 -z-20 h-[720px] rounded-3xl bg-white/70 blur-3xl dark:hidden" />
+
       <Reveal>
         <div className="flex flex-col gap-4">
           <h2 className="section-title text-slate-900 dark:text-white">Experiências Profissionais</h2>
@@ -68,11 +71,11 @@ export function Experience() {
         </div>
       </Reveal>
 
-      <div className="mt-12 space-y-10 border-l border-slate-300 dark:border-white/10 pl-6 md:pl-10">
+      <div className="mt-12 space-y-10 border-l border-slate-200/70 dark:border-white/10 pl-6 md:pl-10">
         {EXPERIENCES.map((experience, index) => (
           <Reveal key={`${experience.company}-${experience.role}`} delay={index * 120}>
-            <article className="relative rounded-2xl border border-slate-300 dark:border-white/10 bg-slate-50 dark:bg-white/5 p-6 transition hover:border-aurora dark:hover:border-neon/40 hover:shadow-glow dark:hover:shadow-glow">
-              <span className="absolute -left-3 top-6 h-5 w-5 rounded-full border-4 border-white dark:border-charcoal bg-aurora shadow-glow" />
+            <article className="relative overflow-hidden rounded-2xl border border-white/70 bg-white/85 p-6 shadow-aurora backdrop-blur-sm transition hover:-translate-y-1 hover:border-aurora hover:shadow-[0_35px_60px_-35px_rgba(31,157,109,0.55)] dark:border-white/10 dark:bg-white/5 dark:hover:border-neon/40 dark:hover:shadow-glow">
+              <span className="absolute -left-3 top-6 h-5 w-5 rounded-full border-4 border-white bg-gradient-to-br from-aurora to-sunrise shadow-[0_10px_30px_-12px_rgba(31,157,109,0.8)] dark:border-charcoal dark:bg-aurora dark:shadow-glow" />
               <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
                   {experience.role}
@@ -84,12 +87,12 @@ export function Experience() {
               <p className="mt-4 text-sm text-slate-700 dark:text-slate/90 md:text-base">{experience.summary}</p>
 
               <ul className="mt-4 space-y-2 text-sm text-slate-700 dark:text-slate/80">
-                {experience.achievements.map(item => (
-                  <li key={item} className="flex items-start gap-2">
-                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-aurora dark:bg-neon" />
-                    <span>{item}</span>
-                  </li>
-                ))}
+                  {experience.achievements.map(item => (
+                    <li key={item} className="flex items-start gap-2">
+                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-gradient-to-br from-aurora to-sunrise dark:from-neon dark:to-emerald-400" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
               </ul>
 
               <p className="mt-4 text-xs font-mono uppercase tracking-wide text-aurora/80 dark:text-neon/80">

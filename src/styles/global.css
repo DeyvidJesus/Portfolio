@@ -29,9 +29,11 @@ html.dark body {
 
 /* Tema Claro */
 html:not(.dark) body {
-  background: radial-gradient(circle at 10% 20%, rgba(31, 157, 109, 0.08) 0%, transparent 55%),
-              radial-gradient(circle at 90% 10%, rgba(31, 157, 109, 0.06) 0%, transparent 60%),
-              #ffffff;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(31, 157, 109, 0.18) 0%, transparent 55%),
+    radial-gradient(circle at 82% 12%, rgba(248, 179, 123, 0.25) 0%, transparent 52%),
+    radial-gradient(circle at 50% 86%, rgba(224, 242, 255, 0.5) 0%, transparent 58%),
+    linear-gradient(180deg, #ffffff 0%, #f8fbff 55%, #fff6fb 100%);
   color: #1f2937;
 }
 
@@ -126,9 +128,9 @@ html:not(.dark) *::-webkit-scrollbar-thumb {
 }
 
 html:not(.dark) .glass-panel {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(240, 248, 255, 0.55));
-  border: 1px solid rgba(31, 157, 109, 0.25);
-  box-shadow: 0 24px 60px -30px rgba(12, 24, 38, 0.1);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(224, 242, 255, 0.75));
+  border: 1px solid rgba(31, 157, 109, 0.2);
+  box-shadow: 0 24px 60px -30px rgba(16, 42, 66, 0.15);
 }
 
 .section-title {
