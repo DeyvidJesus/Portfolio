@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { FiArrowUp } from 'react-icons/fi';
 
 const BackToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -6,11 +7,10 @@ const BackToTopButton = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      setIsVisible(scrollTop > 20);
+      setIsVisible(scrollTop > 120);
     };
 
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -19,19 +19,20 @@ const BackToTopButton = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: 'smooth'
     });
   };
 
   return (
     <button
       id="backToTopBtn"
-      title="Voltar ao Topo"
+      title="Voltar ao topo"
       onClick={scrollToTop}
-      className='hidden fixed bottom-5 right-5 text-2xl bg-royal-blue text-white border-none p-2 rounded-full cursor-pointer transition-opacity duration-300 ease-in-out hover:opacity-80'
-      style={{ display: isVisible ? 'block' : 'none' }}
+      className={`fixed bottom-6 right-6 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-aurora text-charcoal shadow-glow transition-all hover:bg-neon ${
+        isVisible ? 'opacity-100' : 'pointer-events-none opacity-0'
+      }`}
     >
-      &#9650;
+      <FiArrowUp className="text-xl" />
     </button>
   );
 };

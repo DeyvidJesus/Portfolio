@@ -1,162 +1,113 @@
+import { FiArrowUpRight } from 'react-icons/fi';
+import { Reveal } from './Reveal';
+
+type Project = {
+  title: string;
+  company: string;
+  description: string;
+  achievements: string[];
+  stack: string;
+  link?: string;
+};
+
+const PROJECTS: Project[] = [
+  {
+    title: 'GoMech Platform',
+    company: 'GoMech',
+    description:
+      'SaaS multi-tenant completo para gestão de oficinas com módulos administrativos, operações, comunicação e relatórios inteligentes.',
+    achievements: [
+      'Arquitetura fullstack com React 19, Vite, TanStack, Java/Spring Boot e PostgreSQL.',
+      'Microsserviço de IA para análises SQL, conversas contextuais e relatórios visuais.',
+      'Infraestrutura conteinerizada com Docker, Nginx, pipelines contínuos e governança ISO/LGPD.'
+    ],
+    stack: 'React · TypeScript · TanStack · Java · Spring Boot · FastAPI · LangChain · PostgreSQL · Docker · Nginx'
+  },
+  {
+    title: 'NKStore Commerce',
+    company: 'Econverse',
+    description:
+      'E-commerce escalável com arquitetura modular, componentes reutilizáveis e foco em performance e SEO.',
+    achievements: [
+      'Refatoração de componentes críticos, rotas dinâmicas e integrações internas.',
+      'Automação de fluxos com serviços Node.js e padronização de código.',
+      'Melhorias de SEO, acessibilidade e métricas Core Web Vitals.'
+    ],
+    stack: 'Next.js · React · TypeScript · Node.js · Tailwind · SASS · APIs internas'
+  },
+  {
+    title: 'Alphabeto Experience',
+    company: 'Econverse',
+    description:
+      'Experiência digital completa com vitrines personalizadas, integrações internas e fluxo de conteúdo dinâmico.',
+    achievements: [
+      'Criação de componentes escaláveis alinhados ao design system.',
+      'Integrações com APIs internas e serviços de conteúdo.',
+      'Landing pages institucionais com carregamento rápido e responsividade total.'
+    ],
+    stack: 'React · Next.js · TypeScript · Node.js · Tailwind · SEO'
+  },
+  {
+    title: 'Automations & Dashboards',
+    company: 'Projetos Freelancer',
+    description:
+      'Soluções personalizadas para clientes corporativos envolvendo dashboards, landing pages e integrações.',
+    achievements: [
+      'Automação de fluxos de dados com Node.js, PHP e Python.',
+      'Integração com serviços de pagamento, CRM e mensageria.',
+      'Design responsivo com foco em acessibilidade e UX.'
+    ],
+    stack: 'React · TypeScript · Tailwind · PHP · MySQL · Automação com Node.js/Python'
+  }
+];
+
 export function Projects() {
   return (
-    <section id="Projects" className="sm:w-full md:w-10/12 flex flex-col items-center">
-      <h2 className="font-serif font-semibold my-6 text-3xl border-b-2 border-royal-blue text-center">Experiências</h2>
-      <div className="flex flex-col items-center mb-16">
-        <div className="flex justify-center bg-white rounded-lg shadow-xl sm:flex-col-reverse lg:flex-row">
-          <div className="font-serif font-medium p-7 sm:w-full lg:w-3/5">
-            <span className="flex items-center mb-2">
-              <h3 className="text-xl font-sansSerif">Nossas Mulheres</h3>
-              <img className="w-8 ml-2" src="/laco.svg" alt="" />
-            </span>
-            <p className="text-justify">O projeto visava desenvolver um site para inscrições e divulgação de uma campanha de mamografia. Enfrentei dois <strong>principais desafios</strong>: <strong>validar dados</strong> para inserção correta no banco de dados e tornar o <strong>formulário mais intuitivo</strong> para um público mais velho. Para isso, <strong>criei expressões regulares</strong> e funções para validar os campos do formulário como RG e CPF, utilizando <strong>jQuery</strong> para facilitar a <strong>visualização e correção dos dados</strong> através da formatação dos mesmos. Com essas ações e o trabalho de marketing, alcançamos <strong>mais de 2 mil inscrições</strong> e reduzimos a taxa de evasão do site.</p>
-            <p className="text-royal-blue flex my-4">O site foi retirado do ar, após o fim da campanha!</p>
-            <ul className="flex justify-around sm:text-sm md:text-md">
-              <li className="flex flex-col items-center">
-                <img className="w-12" src="/htmlIcon.svg" alt="" />
-                HTML5
-              </li>
-              <li className="flex flex-col items-center">
-                <img className="w-12" src="/cssIcon.svg" alt="" />
-                CSS3
-              </li>
-              <li className="flex flex-col items-center">
-                <img className="w-12" src="/phpIcon.svg" alt="" />
-                PHP
-              </li>
-              <li className="flex flex-col items-center">
-                <img className="w-12" src="/mysqlIcon.svg" alt="" />
-                MySQL
-              </li>
-              <li className="flex flex-col items-center">
-                <img className="w-12" src="/gitIcon.svg" alt="" />
-                Git
-              </li>
-            </ul>
-          </div>
-          <div className="sm:w-full sm:h-64 md:h-80 lg:h-auto lg:w-2/5 bg-[url('/nossasMulheres.svg')] bg-cover lg:border-l-2 rounded">
-          </div>
+    <section id="projetos" className="relative mx-auto max-w-6xl px-6 py-24">
+      <Reveal>
+        <div className="flex flex-col gap-4">
+          <h2 className="section-title text-white">Projetos em Destaque</h2>
+          <p className="section-subtitle">
+            Produtos end-to-end, evolução de e-commerces de alta demanda e automações que conectam times e processos.
+          </p>
         </div>
-      </div>
-      <h2 className="font-serif font-semibold my-8 text-3xl border-b-2 border-royal-blue text-center">Projetos</h2>
-      <ul>
-        <li className="flex flex-col items-center mb-16">
-          <div className="flex justify-center bg-white rounded-lg shadow-xl sm:flex-col-reverse lg:flex-row">
-            <div className="font-serif font-medium p-7 sm:w-full lg:w-3/5">
-              <span className="flex items-center mb-2">
-                <h3 className="text-xl font-sansSerif">All.do</h3>
-                <img className="w-8 ml-2" src="/alldoIcon.svg" alt="" />
-              </span>
-              <p className="text-justify">O projeto foi uma <strong>aplicação web de gerenciamento de tarefas e projetos</strong>, desenvolvida exclusivamente por mim. Enfrentei diversos desafios, incluindo a <strong>criação de rotas de API para operações CRUD</strong>, a implementação de <strong>autenticação social</strong> com o next-auth e o desenvolvimento do <strong>dark/light mode</strong>.
+      </Reveal>
 
-                Após estudar a <strong>documentação do Next.js</strong>, criei e integrei as rotas de API. Para autenticação, configurei contas nos <strong>provedores sociais</strong> e os integrei à aplicação, por fim construi toda a paleta do modo escuro e apliquei a lógica utilizando <strong>contextos</strong> no mesmo. Com isso, consegui integrar a aplicação com um <strong>banco de dados MongoDB</strong>, estabelecendo uma aplicação totalmente funcional.</p>
-              <span className="flex">
-                <a href="https://all-do.vercel.app" target="_blank" className="link text-royal-blue flex my-4 !mr-6">Site no ar!</a>
-                <a href="https://github.com/DeyvidJesus/all.do" target="_blank" className="link text-royal-blue flex my-4">Repositório do projeto</a>
-              </span>
-              <ul className="flex justify-around sm:text-sm md:text-md">
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/nextIcon.svg" alt="" />
-                  NextJS
-                </li>
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/typescriptIcon.svg" alt="" />
-                  Typescript
-                </li>
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/mongodbIcon.svg" alt="" />
-                  MongoDB
-                </li>
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/tailwindIcon.svg" alt="" />
-                  Tailwind
-                </li>
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/gitIcon.svg" alt="" />
-                  Git
-                </li>
-              </ul>
-            </div>
-            <div className="sm:w-full sm:h-64 md:h-80 lg:h-auto lg:w-2/5 bg-[url('/alldo.svg')] bg-cover lg:border-l-2 rounded"></div>
-          </div>
-        </li>
-        <li className="flex flex-col items-center mb-16">
-          <div className="flex justify-center bg-white rounded-lg shadow-xl sm:flex-col-reverse lg:flex-row">
-            <div className="font-serif font-medium p-7 sm:w-full lg:w-3/5">
-              <span className="flex items-center mb-2">
-                <h3 className="text-xl font-sansSerif">Consulado Fitness</h3>
-                <img className="w-8 ml-2" src="/consuladoFitnessIcon.png" alt="" />
-              </span>
-              <p className="text-justify">O Consulado Fitness foi um projeto de conclusão de curso desenvolvido por dois desenvolvedores, com o objetivo de criar um <strong>aplicativo que oferecesse treinos personalizados</strong> e uma biblioteca de exercícios para os usuários. Meu principal desafio foi <strong>criar um algoritmo</strong> eficiente <strong>para gerar os treinos</strong> e apresentá-los de forma organizada em tabelas. <strong>Após estruturar o algoritmo</strong> e estudar a documentação do PHP, <strong>implementei as funcionalidades gradualmente e refatorei o código</strong> para melhorar o desempenho. O resultado foi um site intuitivo, permitindo que os usuários acessem treinos de alta qualidade e gerenciem suas informações facilmente, proporcionando uma experiência completa de treinamento físico.</p>
-              <span className="flex">
-                <a href="http://consuladofitness.atwebpages.com/" target="_blank" className="link text-royal-blue flex my-4 !mr-6">Site no ar!</a>
-                <a href="https://github.com/DeyvidJesus/consuladofitness" target="_blank" className="link text-royal-blue flex my-4">Repositório do projeto</a>
-              </span>
-              <ul className="flex justify-around sm:text-sm md:text-md">
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/htmlIcon.svg" alt="" />
-                  HTML5
-                </li>
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/cssIcon.svg" alt="" />
-                  CSS3
-                </li>
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/phpIcon.svg" alt="" />
-                  PHP
-                </li>
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/javascriptIcon.svg" alt="" />
-                  JavaScript
-                </li>
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/mysqlIcon.svg" alt="" />
-                  MySQL
-                </li>
-              </ul>
-            </div>
-            <div className="sm:w-full sm:h-64 md:h-80 lg:h-auto lg:w-2/5 bg-[url('/consuladoFitness.svg')] bg-cover lg:border-l-2 rounded">
-            </div>
-          </div>
-        </li>
-        <li className="flex flex-col items-center mb-16">
-          <div className="flex justify-center bg-white rounded-lg shadow-xl sm:flex-col-reverse lg:flex-row">
-            <div className="font-serif font-medium p-7 sm:w-full lg:w-3/5">
-              <span className="flex items-center mb-2">
-                <h3 className="text-xl font-sansSerif">Design Agency</h3>
-                <img className="w-8 ml-2" src="/designAgencyIcon.svg" alt="" />
-              </span>
-              <p className="text-justify">
-                É uma <strong>Landing Page</strong> para uma agência de design fictícia, com o propósito de apresentar a empresa. Meu principal desafio foi trabalhar com <strong>responsividade</strong> em todo o projeto, onde foi necessário pensar em como manter o <strong>conteúdo bem distribuído</strong> mesmo em telas menores. Para isso, busquei inspiração em alguns designs e fui aplicando conceitos ao projeto. O resultado foi uma página encantadora que <strong>transmitia a identidade da empresa</strong> independentemente do dispositivo, sempre focando na valorização da marca.
-              </p>
-              <span className="flex">
-                <a href="https://ddesign-agency.vercel.app/" target="_blank" className="link text-royal-blue flex my-4 !mr-6">Site no ar!</a>
-                <a href="https://github.com/DeyvidJesus/designAgency" target="_blank" className="link text-royal-blue flex my-4">Repositório do projeto</a>
-              </span>
-              <ul className="flex justify-around sm:text-sm md:text-md">
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/reactIcon.svg" alt="" />
-                  React
-                </li>
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/tailwindIcon.svg" alt="" />
-                  Tailwind
-                </li>
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/typescriptIcon.svg" alt="" />
-                  TypeScript
-                </li>
-                <li className="flex flex-col items-center">
-                  <img className="w-12" src="/gitIcon.svg" alt="" />
-                  Git
-                </li>
-              </ul>
-            </div>
-            <div className="sm:w-full sm:h-64 md:h-80 lg:h-auto lg:w-2/5 bg-[url('/designAgency.png')] bg-cover lg:border-l-2 rounded">
-            </div>
-          </div>
-        </li>
-      </ul>
+      <div className="mt-12 grid gap-6 md:grid-cols-2">
+        {PROJECTS.map((project, index) => (
+          <Reveal key={project.title} delay={index * 120}>
+            <article className="group flex h-full flex-col justify-between rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:border-neon/40 hover:shadow-glow">
+              <div>
+                <span className="text-sm font-mono uppercase tracking-wide text-neon/80">{project.company}</span>
+                <h3 className="mt-2 text-2xl font-semibold text-white">{project.title}</h3>
+                <p className="mt-3 text-sm text-slate/80">{project.description}</p>
+                <ul className="mt-4 space-y-2 text-sm text-slate/70">
+                  {project.achievements.map(item => (
+                    <li key={item} className="flex items-start gap-2">
+                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-neon" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <footer className="mt-6 flex items-center justify-between text-xs font-mono uppercase tracking-wide text-neon/70">
+                <span>{project.stack}</span>
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 text-white transition hover:text-neon"
+                  >
+                    Ver projeto
+                    <FiArrowUpRight />
+                  </a>
+                )}
+              </footer>
+            </article>
+          </Reveal>
+        ))}
+      </div>
     </section>
   );
 }
