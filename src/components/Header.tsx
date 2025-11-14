@@ -34,9 +34,9 @@ export function Header() {
           <span className="font-serif text-xl">Deyvid Gondim</span>
         </a>
 
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate/80">
+        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate/90">
           {NAV_ITEMS.map(item => (
-            <a key={item.href} href={item.href} className="link text-slate/80 hover:text-white">
+            <a key={item.href} href={item.href} className="link text-slate/90 hover:text-white">
               {item.label}
             </a>
           ))}

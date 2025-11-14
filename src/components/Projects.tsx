@@ -80,8 +80,8 @@ export function Projects() {
               <div>
                 <span className="text-sm font-mono uppercase tracking-wide text-neon/80">{project.company}</span>
                 <h3 className="mt-2 text-2xl font-semibold text-white">{project.title}</h3>
-                <p className="mt-3 text-sm text-slate/80">{project.description}</p>
-                <ul className="mt-4 space-y-2 text-sm text-slate/70">
+                <p className="mt-3 text-sm text-slate/90">{project.description}</p>
+                <ul className="mt-4 space-y-2 text-sm text-slate/80">
                   {project.achievements.map(item => (
                     <li key={item} className="flex items-start gap-2">
                       <span className="mt-1 h-1.5 w-1.5 rounded-full bg-neon" />

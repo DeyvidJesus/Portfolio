@@ -18,13 +18,13 @@ export default {
     },
     extend: {
       colors: {
-        night: '#050c16',
-        midnight: '#0a1829',
+        night: '#0d1f33',
+        midnight: '#152c44',
         aurora: '#1f9d6d',
         neon: '#4affc0',
-        charcoal: '#0b1320',
-        slate: '#a0b3c5',
-        smoke: '#1f2733'
+        charcoal: '#1b324a',
+        slate: '#c7d6e5',
+        smoke: '#23354b'
       },
       boxShadow: {
         glow: '0 0 35px rgba(74, 255, 192, 0.2)',

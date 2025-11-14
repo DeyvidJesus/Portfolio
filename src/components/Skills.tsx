@@ -36,7 +36,7 @@ export function Skills() {
           <Reveal key={group.title} delay={index * 120}>
             <div className="glass-panel h-full rounded-2xl p-6">
               <h3 className="text-lg font-semibold text-white">{group.title}</h3>
-              <ul className="mt-4 flex flex-wrap gap-3 text-sm text-slate/80">
+              <ul className="mt-4 flex flex-wrap gap-3 text-sm text-slate/90">
                 {group.items.map(item => (
                   <li key={item} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-wide text-neon/80">
                     {item}

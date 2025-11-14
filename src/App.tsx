@@ -19,7 +19,7 @@ function App() {
         <Skills />
         <Contact />
       </main>
-      <footer className="border-t border-white/5 bg-charcoal/70 py-8 text-center text-sm text-slate/70">
+      <footer className="border-t border-white/5 bg-charcoal/70 py-8 text-center text-sm text-slate/80">
         <p>
           Construído por <strong className="text-neon">Deyvid Gondim</strong> · Desenvolvedor Fullstack · {new Date().getFullYear()}
         </p>

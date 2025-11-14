@@ -31,7 +31,7 @@ export function About() {
         <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
           <div className="max-w-2xl">
             <h2 className="section-title text-white">Resumo Profissional</h2>
-            <p className="mt-4 text-base text-slate/80 md:text-lg">
+            <p className="mt-4 text-base text-slate/90 md:text-lg">
               Desenvolvedor fullstack com experiência prática em todo o ciclo de produtos digitais. Lidero arquiteturas distribuídas, construo interfaces modernas e orquestro deploys seguros em ambientes conteinerizados. Atuo tanto em squads multidisciplinares quanto liderando iniciativas de ponta a ponta.
             </p>
           </div>
@@ -39,7 +39,7 @@ export function About() {
             {SUMMARY_STATS.map(stat => (
               <div key={stat.label}>
                 <span className="text-xl font-semibold text-neon">{stat.value}</span>
-                <p className="text-sm text-slate/80">{stat.label}</p>
+                <p className="text-sm text-slate/90">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -51,7 +51,7 @@ export function About() {
           <Reveal key={focus.title} delay={150 * index}>
             <article className="glass-panel h-full rounded-2xl p-6">
               <h3 className="text-lg font-semibold text-white">{focus.title}</h3>
-              <p className="mt-3 text-sm text-slate/80">{focus.description}</p>
+              <p className="mt-3 text-sm text-slate/90">{focus.description}</p>
             </article>
           </Reveal>
         ))}

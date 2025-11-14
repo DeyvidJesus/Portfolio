@@ -37,7 +37,7 @@ export function Main() {
         </Reveal>
 
         <Reveal delay={200}>
-          <p className="max-w-3xl text-lg text-slate/80 md:text-xl">
+          <p className="max-w-3xl text-lg text-slate/90 md:text-xl">
             Eu ajudo empresas a lançarem e escalarem produtos. Lidero arquiteturas modernas, crio interfaces de alta performance e integro serviços confiáveis em ambientes conteinerizados.
           </p>
         </Reveal>
@@ -67,7 +67,7 @@ export function Main() {
             <Reveal key={highlight.label} delay={400 + index * 120}>
               <div className="glass-panel flex h-full flex-col gap-3 rounded-2xl p-6">
                 <h3 className="text-lg font-semibold text-white">{highlight.label}</h3>
-                <p className="text-sm text-slate/80">{highlight.description}</p>
+                <p className="text-sm text-slate/90">{highlight.description}</p>
               </div>
             </Reveal>
           ))}

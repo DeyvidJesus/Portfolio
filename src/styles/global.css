@@ -12,10 +12,10 @@ html {
 
 body {
   margin: 0;
-  background: radial-gradient(circle at 10% 20%, rgba(31, 157, 109, 0.12) 0%, transparent 55%),
-              radial-gradient(circle at 90% 10%, rgba(74, 255, 192, 0.08) 0%, transparent 60%),
-              #050c16;
-  color: #f4f8fb;
+  background: radial-gradient(circle at 10% 20%, rgba(31, 157, 109, 0.18) 0%, transparent 55%),
+              radial-gradient(circle at 90% 10%, rgba(74, 255, 192, 0.12) 0%, transparent 60%),
+              #0d1f33;
+  color: #f6fbff;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -81,9 +81,9 @@ body {
 }
 
 .glass-panel {
-  background: linear-gradient(135deg, rgba(15, 32, 48, 0.82), rgba(15, 32, 48, 0.45));
-  border: 1px solid rgba(74, 255, 192, 0.12);
-  box-shadow: 0 24px 60px -30px rgba(12, 24, 38, 0.85);
+  background: linear-gradient(135deg, rgba(27, 50, 74, 0.85), rgba(27, 50, 74, 0.55));
+  border: 1px solid rgba(74, 255, 192, 0.18);
+  box-shadow: 0 24px 60px -30px rgba(12, 24, 38, 0.6);
   backdrop-filter: blur(18px);
 }
 
@@ -92,5 +92,5 @@ body {
 }
 
 .section-subtitle {
-  @apply text-base md:text-lg text-slate/80 max-w-2xl;
+  @apply text-base md:text-lg text-slate/90 max-w-2xl;
 }

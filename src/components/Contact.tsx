@@ -8,7 +8,7 @@ export function Contact() {
         <div className="glass-panel rounded-3xl p-10 text-center">
           <span className="text-sm font-mono uppercase tracking-[0.3em] text-neon/70">Próximo passo</span>
           <h2 className="mt-4 text-3xl font-semibold text-white md:text-4xl">Vamos acelerar seu próximo produto?</h2>
-          <p className="mx-auto mt-4 max-w-3xl text-base text-slate/80 md:text-lg">
+          <p className="mx-auto mt-4 max-w-3xl text-base text-slate/90 md:text-lg">
             Estou pronto para apoiar desde a concepção da arquitetura até a implementação de features críticas. Entre em contato para construirmos soluções completas com qualidade, segurança e ritmo de escala.
           </p>
 
