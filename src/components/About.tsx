@@ -1,77 +1,61 @@
-import Timeline from '@mui/lab/Timeline'
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import { Reveal } from './Reveal';
+
+const FOCUS_AREAS = [
+  {
+    title: 'Arquitetura orientada a produto',
+    description:
+      'Definição de domínios, modelos de dados, contratos e comunicação entre serviços garantindo escalabilidade e governança técnica.'
+  },
+  {
+    title: 'Experiências web premium',
+    description:
+      'Componentes reutilizáveis, SSR/SSG com Next.js, design systems e interfaces responsivas otimizadas para performance e SEO.'
+  },
+  {
+    title: 'Automação e observabilidade',
+    description:
+      'Pipelines CI/CD, monitoramento, logs estruturados, testes e métricas para garantir entregas contínuas com segurança.'
+  }
+];
+
+const SUMMARY_STATS = [
+  { value: '4 produtos', label: 'lançados do zero, com entregas contínuas' },
+  { value: '10+ integrações', label: 'entre APIs, microsserviços e automações internas' },
+  { value: 'Stack completa', label: 'React · Next.js · Node.js · Python · Java · Spring Boot · Docker' }
+];
 
 export function About() {
   return (
-    <section id="About" className='sm:w-full md:w-10/12 flex flex-col items-center'>
-      <h2 className='font-serif font-semibold my-6 text-3xl border-b-2 border-royal-blue text-center'>Sobre Mim</h2>
-      <Timeline>
-        <TimelineItem className='my-4'>
-          <TimelineOppositeContent className='!flex-none' color={'secondary'}>
-          <p className='font-bold'>2020</p>
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot color='secondary' />
-            <TimelineConnector/>
-          </TimelineSeparator>
-          <TimelineContent sx={{
-            textAlign: 'justify',
-            fontWeight: 'medium'
-          }}>
-             Em 2020, iniciei minha jornada no <strong>desenvolvimento web</strong>, mergulhando nos fundamentos essenciais, como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> e <strong>Git</strong>. Neste ano, concentrei-me no desenvolvimento de <strong>landing pages</strong> e projetos mais simples, estabelecendo as bases para minha carreira.
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem className='my-4'>
-          <TimelineOppositeContent className='!flex-none' color="secondary">
-          <p className='ml-1 font-bold'>2021</p>
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot color='secondary' />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{
-            textAlign: 'justify',
-            fontWeight: 'medium'
-          }}>
-            O ano de 2021 foi marcado por um aprimoramento significativo nas minhas habilidades, impulsionado pelo programa da Rocketseat. Aprofundei-me no universo <strong>React e Next</strong>, explorando também ferramentas como <strong>SASS</strong>, <strong>Styled-components</strong> e <strong>Chakra-UI</strong>. Esta fase consolidou meu entendimento de desenvolvimento front-end e abriu portas para desafios mais complexos.
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem className='my-4'>
-          <TimelineOppositeContent className='!flex-none' color="secondary">
-            <p className='font-bold'>2022</p>
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot color='secondary'/>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{
-            textAlign: 'justify',
-            fontWeight: 'medium'
-          }}>
-             Em 2022, <strong>ingressei em um curso técnico</strong> que expandiu meu horizonte em TI. Além de aprofundar meus conhecimentos em React e Next por conta, fui introduzido a novas áreas pelo curso, como <strong>Java, design e marketing</strong>. Esse ano foi crucial para fortalecer minha base de conhecimentos e ampliar minha visão sobre as possibilidades dentro da área de tecnologia.
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem className='my-4'>
-          <TimelineOppositeContent className='!flex-none' color="secondary">
-            <p className='font-bold'>2023</p>
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot color='secondary'/>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{
-            textAlign: 'justify',
-            fontWeight: 'medium'
-          }}>
-            O ano de 2023 foi um marco crucial na minha jornada. <strong>Concluí meu curso técnico</strong>, aplicando os conhecimentos adquiridos no <strong>desenvolvimento de um algoritmo inovador</strong>, capaz de <strong>criar treinos personalizados com base nas informações dos usuários</strong>. Além disso, destaco a <strong>criação de um site para uma campanha de mamografia</strong> ambos utilizando PHP e MySQL, juntamente com git para trabalhar em time. E logo depois o <strong>desenvolvimento de um projeto de gerenciamento de tarefas</strong>, este utilizando Next.js, NextAuth e MongoDB.
-          </TimelineContent>
-        </TimelineItem>
-      </Timeline>
+    <section id="resumo" className="relative mx-auto max-w-6xl px-6 py-24">
+      <Reveal>
+        <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+          <div className="max-w-2xl">
+            <h2 className="section-title text-white">Resumo Profissional</h2>
+            <p className="mt-4 text-base text-slate/80 md:text-lg">
+              Desenvolvedor fullstack com experiência prática em todo o ciclo de produtos digitais. Lidero arquiteturas distribuídas, construo interfaces modernas e orquestro deploys seguros em ambientes conteinerizados. Atuo tanto em squads multidisciplinares quanto liderando iniciativas de ponta a ponta.
+            </p>
+          </div>
+          <div className="glass-panel grid gap-4 rounded-2xl p-6 md:w-80">
+            {SUMMARY_STATS.map(stat => (
+              <div key={stat.label}>
+                <span className="text-xl font-semibold text-neon">{stat.value}</span>
+                <p className="text-sm text-slate/80">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Reveal>
+
+      <div className="mt-12 grid gap-6 md:grid-cols-3">
+        {FOCUS_AREAS.map((focus, index) => (
+          <Reveal key={focus.title} delay={150 * index}>
+            <article className="glass-panel h-full rounded-2xl p-6">
+              <h3 className="text-lg font-semibold text-white">{focus.title}</h3>
+              <p className="mt-3 text-sm text-slate/80">{focus.description}</p>
+            </article>
+          </Reveal>
+        ))}
+      </div>
     </section>
   );
 }

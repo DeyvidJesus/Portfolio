@@ -1,19 +1,77 @@
+import { FiArrowUpRight, FiDownload } from 'react-icons/fi';
+import { Reveal } from './Reveal';
+
+const HIGHLIGHTS = [
+  {
+    label: 'SaaS multi-tenant end-to-end',
+    description: 'Arquitetura completa, microsserviços de IA, deploy em Docker/Nginx e governança técnica.'
+  },
+  {
+    label: 'APIs e microsserviços escaláveis',
+    description: 'Domínio de React, Next.js, Java, Spring Boot, Node.js e Python para produtos prontos para produção.'
+  },
+  {
+    label: 'Governança & performance',
+    description: 'CI/CD, observabilidade, LGPD, ISO 38500 e práticas de segurança aplicadas em projetos reais.'
+  }
+];
+
 export function Main() {
   return (
-    <section id="Home" className="max-w-full sm:w-screen flex sm:flex-col sm:h-[32rem] items-center sm:justify-center sm:bg-[url('/background.svg')] bg-cover bg-fixed lg:h-screen">
-      <h1 className="sm:text-xl lg:text-2xl font-serif text-dark-gray font-medium text-center">Olá, eu sou o <strong className="sm:text-3xl md:text-4xl font-sansSerif">Deyvid!</strong></h1>
-      <h2 className="font-serif font-semibold text-royal-blue text-xl sm:my-2">Desenvolvedor Web</h2>
-      <div className="flex sm:flex-col lg:flex-row justify-around lg:w-1/4 items-center sm:h-48 lg:h-24">
-        <a href="/Deyvid Gondim - Curriculo.pdf" target="_blank" download className="bg-royal-blue lg:h-14 flex sm:p-2 lg:p-3 rounded text-white font-semibold items-center justify-between sm:w-44 lg:w-36 cursor-pointer">Baixar CV
-          <img src="/downloadIcon.svg" alt="Ícone de download" className="sm:w-6 sm:h-6" />
-        </a>
-        <a href="mailto:deyvidgondim@outlook.com" className="bg-white border-2 lg:h-14 border-royal-blue flex sm:p-2 lg:p-3 rounded text-black font-semibold items-center justify-between sm:w-44 lg:w-36">E-mail
-          <img src="/emailIcon.svg" alt="Ícone de e-mail" className="sm:w-6 sm:h-6" />
-        </a>
-      </div>
-      <div className="flex justify-around items-center">
-        <a href="https://github.com/DeyvidJesus" target="_blank"><img src="/githubIcon.svg" alt="Ícone do Github" className="sm:w-10 sm:h- mr-4" /></a>
-        <a href="https://www.linkedin.com/in/deyvid-g/" target="_blank"><img src="/linkedinIcon.svg" alt="Ícone do Linkedin" className="sm:w-10 sm:h-10 ml-4" /></a>
+    <section id="inicio" className="relative overflow-hidden">
+      <div className="absolute inset-0 -z-10 bg-grid bg-grid-pattern opacity-60" />
+      <div className="absolute -left-10 top-16 h-64 w-64 rounded-full bg-aurora/30 blur-3xl" />
+      <div className="absolute -right-10 bottom-10 h-64 w-64 rounded-full bg-neon/20 blur-3xl" />
+
+      <div className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center gap-12 px-6 pb-24 pt-32">
+        <Reveal>
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1 text-sm font-medium text-neon">
+            Desenvolvedor Fullstack · Arquitetura distribuída
+          </span>
+        </Reveal>
+
+        <Reveal delay={100}>
+          <h1 className="max-w-4xl text-4xl font-semibold leading-tight text-white md:text-6xl">
+            Construo experiências digitais completas — do design da interface aos microsserviços em produção.
+          </h1>
+        </Reveal>
+
+        <Reveal delay={200}>
+          <p className="max-w-3xl text-lg text-slate/80 md:text-xl">
+            Eu ajudo empresas a lançarem e escalarem produtos. Lidero arquiteturas modernas, crio interfaces de alta performance e integro serviços confiáveis em ambientes conteinerizados.
+          </p>
+        </Reveal>
+
+        <Reveal delay={300}>
+          <div className="flex flex-wrap items-center gap-4">
+            <a
+              href="mailto:deyvidgondim.dev@gmail.com"
+              className="group flex items-center gap-2 rounded-full bg-aurora px-6 py-3 text-base font-semibold text-charcoal transition hover:bg-neon"
+            >
+              Vamos construir juntos
+              <FiArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+            </a>
+            <a
+              href="/Deyvid Gondim - Curriculo.pdf"
+              download
+              className="group flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-base font-semibold text-white transition hover:border-neon/60 hover:text-neon"
+            >
+              Baixar CV
+              <FiDownload className="transition-transform group-hover:-translate-y-0.5" />
+            </a>
+          </div>
+        </Reveal>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          {HIGHLIGHTS.map((highlight, index) => (
+            <Reveal key={highlight.label} delay={400 + index * 120}>
+              <div className="glass-panel flex h-full flex-col gap-3 rounded-2xl p-6">
+                <h3 className="text-lg font-semibold text-white">{highlight.label}</h3>
+                <p className="text-sm text-slate/80">{highlight.description}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );
