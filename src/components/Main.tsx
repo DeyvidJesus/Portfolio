@@ -1,5 +1,6 @@
 import { FiArrowUpRight, FiDownload } from 'react-icons/fi';
 import { Reveal } from './Reveal';
+import type { MouseEvent } from 'react';
 
 const HIGHLIGHTS = [
   {
@@ -17,6 +18,35 @@ const HIGHLIGHTS = [
 ];
 
 export function Main() {
+  // tenta forçar o download do PDF (fallback para abrir em nova aba)
+  const downloadResume = async (e: MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const publicFilename = '/resume.pdf';
+    const encoded = encodeURI(publicFilename);
+
+    try {
+      const res = await fetch(encoded);
+      if (!res.ok) {
+        // fallback: abrir em nova aba
+        window.open(encoded, '_blank');
+        return;
+      }
+
+      const blob = await res.blob();
+      const blobUrl = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = blobUrl;
+      a.download = 'Deyvid-Gondim-Curriculo.pdf';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(blobUrl);
+    } catch (err) {
+      // se falhar, abre em nova aba
+      window.open(encoded, '_blank');
+    }
+  };
+
   return (
     <section id="inicio" className="relative overflow-hidden">
       <div className="absolute inset-0 -z-20 bg-gradient-to-b from-white/80 via-skyglass/40 to-transparent dark:from-transparent dark:via-transparent dark:to-transparent" />
@@ -55,8 +85,9 @@ export function Main() {
               <FiArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </a>
             <a
-              href="/Deyvid Gondim - Curriculo.pdf"
-              download
+              href={encodeURI('/resume.pdf')}
+              onClick={downloadResume}
+              download="Deyvid-Gondim-Curriculo.pdf"
               className="group flex items-center gap-2 rounded-full border border-white/70 bg-white/80 px-6 py-3 text-base font-semibold text-slate-900 shadow-[0_18px_38px_-28px_rgba(31,157,109,0.6)] backdrop-blur-sm transition hover:border-aurora hover:text-aurora dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:border-neon/60 dark:hover:text-neon"
             >
               Baixar CV
