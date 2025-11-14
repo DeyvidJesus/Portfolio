@@ -78,12 +78,12 @@ export function Experience() {
                   {experience.role}
                   <span className="ml-2 text-base font-normal text-neon">@ {experience.company}</span>
                 </h3>
-                <span className="text-sm font-mono uppercase tracking-wide text-slate/70">{experience.period}</span>
+                <span className="text-sm font-mono uppercase tracking-wide text-slate/80">{experience.period}</span>
               </div>
 
-              <p className="mt-4 text-sm text-slate/80 md:text-base">{experience.summary}</p>
+              <p className="mt-4 text-sm text-slate/90 md:text-base">{experience.summary}</p>
 
-              <ul className="mt-4 space-y-2 text-sm text-slate/70">
+              <ul className="mt-4 space-y-2 text-sm text-slate/80">
                 {experience.achievements.map(item => (
                   <li key={item} className="flex items-start gap-2">
                     <span className="mt-1 h-1.5 w-1.5 rounded-full bg-neon" />
