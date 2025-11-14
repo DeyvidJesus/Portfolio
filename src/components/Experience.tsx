@@ -58,41 +58,41 @@ const EXPERIENCES = [
 
 export function Experience() {
   return (
-    <section id="experiencias" className="mx-auto max-w-6xl px-6 py-24">
+    <section id="experiencias" className="mx-auto max-w-[1440px] px-6 py-24">
       <Reveal>
         <div className="flex flex-col gap-4">
-          <h2 className="section-title text-white">Experiências Profissionais</h2>
+          <h2 className="section-title text-slate-900 dark:text-white">Experiências Profissionais</h2>
           <p className="section-subtitle">
             Liderança técnica, evolução arquitetural e entrega de produtos completos para diferentes contextos de negócio.
           </p>
         </div>
       </Reveal>
 
-      <div className="mt-12 space-y-10 border-l border-white/10 pl-6 md:pl-10">
+      <div className="mt-12 space-y-10 border-l border-slate-300 dark:border-white/10 pl-6 md:pl-10">
         {EXPERIENCES.map((experience, index) => (
           <Reveal key={`${experience.company}-${experience.role}`} delay={index * 120}>
-            <article className="relative rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:border-neon/40 hover:shadow-glow">
-              <span className="absolute -left-3 top-6 h-5 w-5 rounded-full border-4 border-charcoal bg-aurora shadow-glow" />
+            <article className="relative rounded-2xl border border-slate-300 dark:border-white/10 bg-slate-50 dark:bg-white/5 p-6 transition hover:border-aurora dark:hover:border-neon/40 hover:shadow-glow dark:hover:shadow-glow">
+              <span className="absolute -left-3 top-6 h-5 w-5 rounded-full border-4 border-white dark:border-charcoal bg-aurora shadow-glow" />
               <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-                <h3 className="text-xl font-semibold text-white">
+                <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
                   {experience.role}
-                  <span className="ml-2 text-base font-normal text-neon">@ {experience.company}</span>
+                  <span className="ml-2 text-base font-normal text-aurora dark:text-neon">@ {experience.company}</span>
                 </h3>
-                <span className="text-sm font-mono uppercase tracking-wide text-slate/80">{experience.period}</span>
+                <span className="text-sm font-mono uppercase tracking-wide text-slate-600 dark:text-slate/80">{experience.period}</span>
               </div>
 
-              <p className="mt-4 text-sm text-slate/90 md:text-base">{experience.summary}</p>
+              <p className="mt-4 text-sm text-slate-700 dark:text-slate/90 md:text-base">{experience.summary}</p>
 
-              <ul className="mt-4 space-y-2 text-sm text-slate/80">
+              <ul className="mt-4 space-y-2 text-sm text-slate-700 dark:text-slate/80">
                 {experience.achievements.map(item => (
                   <li key={item} className="flex items-start gap-2">
-                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-neon" />
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-aurora dark:bg-neon" />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
 
-              <p className="mt-4 text-xs font-mono uppercase tracking-wide text-neon/80">
+              <p className="mt-4 text-xs font-mono uppercase tracking-wide text-aurora/80 dark:text-neon/80">
                 {experience.technologies}
               </p>
             </article>

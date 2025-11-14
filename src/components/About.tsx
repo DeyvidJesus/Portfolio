@@ -26,20 +26,20 @@ const SUMMARY_STATS = [
 
 export function About() {
   return (
-    <section id="resumo" className="relative mx-auto max-w-6xl px-6 py-24">
+    <section id="resumo" className="relative mx-auto max-w-[1440px] px-6 py-24">
       <Reveal>
         <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
-          <div className="max-w-2xl">
-            <h2 className="section-title text-white">Resumo Profissional</h2>
-            <p className="mt-4 text-base text-slate/90 md:text-lg">
+          <div className="max-w-3xl">
+            <h2 className="section-title text-slate-900 dark:text-white">Resumo Profissional</h2>
+            <p className="mt-4 text-base text-slate-700 dark:text-slate/90 md:text-lg">
               Desenvolvedor fullstack com experiência prática em todo o ciclo de produtos digitais. Lidero arquiteturas distribuídas, construo interfaces modernas e orquestro deploys seguros em ambientes conteinerizados. Atuo tanto em squads multidisciplinares quanto liderando iniciativas de ponta a ponta.
             </p>
           </div>
           <div className="glass-panel grid gap-4 rounded-2xl p-6 md:w-80">
             {SUMMARY_STATS.map(stat => (
               <div key={stat.label}>
-                <span className="text-xl font-semibold text-neon">{stat.value}</span>
-                <p className="text-sm text-slate/90">{stat.label}</p>
+                <span className="text-xl font-semibold text-aurora dark:text-neon">{stat.value}</span>
+                <p className="text-sm text-slate-700 dark:text-slate/90">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -50,8 +50,8 @@ export function About() {
         {FOCUS_AREAS.map((focus, index) => (
           <Reveal key={focus.title} delay={150 * index}>
             <article className="glass-panel h-full rounded-2xl p-6">
-              <h3 className="text-lg font-semibold text-white">{focus.title}</h3>
-              <p className="mt-3 text-sm text-slate/90">{focus.description}</p>
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white">{focus.title}</h3>
+              <p className="mt-3 text-sm text-slate-700 dark:text-slate/90">{focus.description}</p>
             </article>
           </Reveal>
         ))}

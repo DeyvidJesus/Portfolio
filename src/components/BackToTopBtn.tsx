@@ -28,7 +28,7 @@ const BackToTopButton = () => {
       id="backToTopBtn"
       title="Voltar ao topo"
       onClick={scrollToTop}
-      className={`fixed bottom-6 right-6 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-aurora text-charcoal shadow-glow transition-all hover:bg-neon ${
+      className={`fixed bottom-6 right-6 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-aurora text-white dark:text-charcoal shadow-glow transition-all hover:bg-aurora/90 dark:hover:bg-neon ${
         isVisible ? 'opacity-100' : 'pointer-events-none opacity-0'
       }`}
     >

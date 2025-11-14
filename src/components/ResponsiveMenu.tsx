@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { FiGithub, FiLinkedin, FiMenu, FiX } from 'react-icons/fi';
+import { ThemeToggle } from './ThemeToggle';
 
 type ResponsiveMenuProps = {
   items: Array<{ label: string; href: string }>;
@@ -25,32 +26,28 @@ export function ResponsiveMenu({ items }: ResponsiveMenuProps) {
     <div className="md:hidden">
       <button
         onClick={() => setIsOpened(prev => !prev)}
-        className="relative z-50 rounded-full border border-white/10 bg-white/5 p-2 text-white transition hover:border-neon/60 hover:text-neon"
+        className="relative z-50 rounded-full border border-slate-300 dark:border-white/10 bg-slate-100 dark:bg-white/5 p-2 text-slate-900 dark:text-white transition hover:border-aurora dark:hover:border-neon/60 hover:text-aurora dark:hover:text-neon"
         aria-label="Abrir menu de navegação"
       >
         {isOpened ? <FiX size={22} /> : <FiMenu size={22} />}
       </button>
 
       {isOpened && (
-        <nav className="fixed inset-0 z-40 flex flex-col bg-charcoal/95 backdrop-blur-xl">
+        <nav className="fixed inset-0 z-40 flex flex-col bg-white dark:bg-charcoal/95 backdrop-blur-xl">
           <div className="flex items-center justify-between px-6 py-5">
-            <span className="text-lg font-semibold text-white">Menu</span>
-            <button
-              onClick={closeMenu}
-              className="rounded-full border border-white/10 bg-white/5 p-2 text-white transition hover:border-neon/60 hover:text-neon"
-              aria-label="Fechar menu de navegação"
-            >
-              <FiX size={20} />
-            </button>
+            <span className="text-lg font-semibold text-slate-900 dark:text-white">Menu</span>
+            <div className="flex items-center mr-14">
+              <ThemeToggle />
+            </div>
           </div>
 
-          <ul className="flex flex-1 flex-col items-center justify-center gap-8 text-lg font-medium text-slate">
+          <ul className="flex flex-1 flex-col items-center justify-center gap-8 text-lg font-medium text-slate-700 dark:text-slate">
             {items.map(item => (
               <li key={item.href}>
                 <a
                   href={item.href}
                   onClick={closeMenu}
-                  className="link text-2xl text-slate hover:text-white"
+                  className="link text-2xl text-slate-700 dark:text-slate hover:text-slate-900 dark:hover:text-white"
                 >
                   {item.label}
                 </a>
@@ -58,21 +55,21 @@ export function ResponsiveMenu({ items }: ResponsiveMenuProps) {
             ))}
           </ul>
 
-          <div className="flex items-center justify-center gap-6 pb-12 text-slate">
+          <div className="flex items-center justify-center gap-6 pb-12 text-slate-700 dark:text-slate">
             <a
               href="https://github.com/DeyvidJesus"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 transition hover:border-neon/60 hover:text-neon"
+              className="flex items-center gap-2 rounded-full border border-slate-300 dark:border-white/10 px-4 py-2 transition hover:border-aurora dark:hover:border-neon/60 hover:text-aurora dark:hover:text-neon"
             >
               <FiGithub />
               GitHub
             </a>
             <a
-              href="https://www.linkedin.com/in/deyvid-g/"
+              href="https://www.linkedin.com/in/deyvid-gondim/"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-2 rounded-full bg-aurora px-4 py-2 font-semibold text-charcoal transition hover:bg-neon"
+              className="flex items-center gap-2 rounded-full bg-aurora px-4 py-2 font-semibold text-white dark:text-charcoal transition hover:bg-aurora/90 dark:hover:bg-neon"
             >
               <FiLinkedin />
               LinkedIn
