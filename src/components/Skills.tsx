@@ -1,40 +1,64 @@
 import { Reveal } from './Reveal';
+import { useLanguage } from '../hooks/useLanguage';
 
-const SKILL_GROUPS = [
-  {
-    title: 'Frontend',
-    items: ['React 19', 'Next.js (SSR/SSG)', 'TypeScript', 'TanStack Router/Query', 'Tailwind CSS', 'Design Systems', 'Acessibilidade', 'SEO/Performance']
+const CONTENT = {
+  en: {
+    title: 'Stack & Skills',
+    subtitle: 'Core technologies used across backend, frontend, and infrastructure.',
+    groups: [
+      {
+        title: 'Frontend',
+        items: ['React.js', 'Next.js', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'SASS', 'Tailwind CSS']
+      },
+      {
+        title: 'Backend & Data',
+        items: ['Java (Spring Boot)', 'Node.js', 'GraphQL', 'REST APIs', 'PostgreSQL', 'MongoDB']
+      },
+      {
+        title: 'Infrastructure & Tooling',
+        items: ['Docker', 'Git & GitHub', 'CI/CD', 'Google Cloud Platform (GCP)']
+      }
+    ]
   },
-  {
-    title: 'Backend & Dados',
-    items: ['Node.js', 'Java · Spring Boot', 'Python · FastAPI', 'Microsserviços', 'APIs REST e GraphQL', 'Autenticação JWT', 'PostgreSQL', 'MySQL']
-  },
-  {
-    title: 'DevOps & Arquitetura',
-    items: ['Docker', 'Nginx', 'CI/CD', 'VPS Linux', 'Observabilidade', 'Infraestrutura como código', 'LGPD', 'ISO 38500']
-  },
-  {
-    title: 'Processos & Qualidade',
-    items: ['Documentação técnica', 'Padronização de código', 'Metodologias ágeis', 'Testing (unitário e integração)', 'Code Review', 'Mentoria técnica']
+  pt: {
+    title: 'Stack & Habilidades',
+    subtitle: 'Tecnologias centrais usadas em backend, frontend e infraestrutura.',
+    groups: [
+      {
+        title: 'Frontend',
+        items: ['React.js', 'Next.js', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'SASS', 'Tailwind CSS']
+      },
+      {
+        title: 'Backend & Dados',
+        items: ['Java (Spring Boot)', 'Node.js', 'GraphQL', 'APIs REST', 'PostgreSQL', 'MongoDB']
+      },
+      {
+        title: 'Infraestrutura & Ferramentas',
+        items: ['Docker', 'Git & GitHub', 'CI/CD', 'Google Cloud Platform (GCP)']
+      }
+    ]
   }
-];
+};
 
 export function Skills() {
+  const { language } = useLanguage();
+  const content = CONTENT[language];
+
   return (
     <section id="habilidades" className="relative mx-auto max-w-[1440px] px-6 py-24">
       <div className="pointer-events-none absolute inset-x-6 top-16 -z-10 h-[420px] rounded-[36px] bg-light-layer opacity-90 blur-2xl dark:hidden" />
       <div className="pointer-events-none absolute inset-x-12 top-24 -z-10 hidden h-[420px] rounded-[32px] bg-gradient-to-r from-charcoal/85 via-midnight/80 to-charcoal/85 blur-3xl dark:block" />
       <Reveal>
         <div className="flex flex-col gap-4">
-          <h2 className="section-title text-slate-900 dark:text-white">Stack & Habilidades</h2>
+          <h2 className="section-title text-slate-900 dark:text-white">{content.title}</h2>
           <p className="section-subtitle">
-            Tecnologia para entregar soluções robustas, performáticas e fáceis de evoluir.
+            {content.subtitle}
           </p>
         </div>
       </Reveal>
 
       <div className="mt-12 grid gap-6 md:grid-cols-2">
-        {SKILL_GROUPS.map((group, index) => (
+        {content.groups.map((group, index) => (
           <Reveal key={group.title} delay={index * 120}>
             <div className="glass-panel relative h-full overflow-hidden rounded-2xl border border-white/70 bg-white/85 p-6 shadow-aurora backdrop-blur-sm dark:border-white/10 dark:bg-white/5 dark:shadow-card">
               <span className="pointer-events-none absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-aurora via-emerald-400 to-sunrise dark:from-neon dark:via-emerald-400 dark:to-aurora" />

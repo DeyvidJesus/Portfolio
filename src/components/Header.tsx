@@ -1,18 +1,32 @@
 import { useEffect, useState } from 'react';
 import { ResponsiveMenu } from './ResponsiveMenu';
 import { ThemeToggle } from './ThemeToggle';
+import { LanguageToggle } from './LanguageToggle';
+import { useLanguage } from '../hooks/useLanguage';
 
-const NAV_ITEMS = [
-  { label: 'Início', href: '#inicio' },
-  { label: 'Resumo', href: '#resumo' },
-  { label: 'Experiências', href: '#experiencias' },
-  { label: 'Projetos', href: '#projetos' },
-  { label: 'Habilidades', href: '#habilidades' },
-  { label: 'Contato', href: '#contato' }
-];
+const NAV_ITEMS = {
+  en: [
+    { label: 'Home', href: '#inicio' },
+    { label: 'Summary', href: '#resumo' },
+    { label: 'Experience', href: '#experiencias' },
+    { label: 'Projects', href: '#projetos' },
+    { label: 'Skills', href: '#habilidades' },
+    { label: 'Contact', href: '#contato' }
+  ],
+  pt: [
+    { label: 'Início', href: '#inicio' },
+    { label: 'Resumo', href: '#resumo' },
+    { label: 'Experiências', href: '#experiencias' },
+    { label: 'Projetos', href: '#projetos' },
+    { label: 'Habilidades', href: '#habilidades' },
+    { label: 'Contato', href: '#contato' }
+  ]
+};
 
 export function Header() {
   const [hasShadow, setHasShadow] = useState(false);
+  const { language } = useLanguage();
+  const navItems = NAV_ITEMS[language];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +62,7 @@ export function Header() {
         </a>
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700 dark:text-slate/90">
-          {NAV_ITEMS.map(item => (
+          {navItems.map(item => (
             <a
               key={item.href}
               href={item.href}
@@ -60,6 +74,7 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
+          <LanguageToggle />
           <ThemeToggle />
           <a
             href="https://github.com/DeyvidJesus"
@@ -79,7 +94,7 @@ export function Header() {
           </a>
         </div>
 
-        <ResponsiveMenu items={NAV_ITEMS} />
+        <ResponsiveMenu items={navItems} />
       </div>
     </header>
   );

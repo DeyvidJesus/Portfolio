@@ -1,23 +1,63 @@
 import { FiArrowUpRight, FiDownload } from 'react-icons/fi';
 import { Reveal } from './Reveal';
 import type { MouseEvent } from 'react';
+import { useLanguage } from '../hooks/useLanguage';
 
-const HIGHLIGHTS = [
-  {
-    label: 'SaaS multi-tenant end-to-end',
-    description: 'Arquitetura completa, microsserviços de IA, deploy em Docker/Nginx e governança técnica.'
-  },
-  {
-    label: 'APIs e microsserviços escaláveis',
-    description: 'Domínio de React, Next.js, Java, Spring Boot, Node.js e Python para produtos prontos para produção.'
-  },
-  {
-    label: 'Governança & performance',
-    description: 'CI/CD, observabilidade, LGPD, ISO 38500 e práticas de segurança aplicadas em projetos reais.'
-  }
-];
+const HIGHLIGHTS = {
+  en: [
+    {
+      label: 'Backend-focused full stack delivery',
+      description: 'Architecture ownership, Java/Spring Boot services, and core business logic for SaaS products.'
+    },
+    {
+      label: 'Production web applications',
+      description: 'React, Next.js, and TypeScript interfaces built alongside backend integrations.'
+    },
+    {
+      label: 'Infrastructure and delivery',
+      description: 'Docker deployments, CI/CD workflows, and cloud/VPS environments.'
+    }
+  ],
+  pt: [
+    {
+      label: 'Entrega full stack com foco em backend',
+      description: 'Arquitetura técnica, serviços em Java/Spring Boot e lógica de negócio para SaaS.'
+    },
+    {
+      label: 'Aplicações web em produção',
+      description: 'Interfaces em React, Next.js e TypeScript com integrações de backend.'
+    },
+    {
+      label: 'Infraestrutura e entrega',
+      description: 'Deploys com Docker, fluxos de CI/CD e ambientes cloud/VPS.'
+    }
+  ]
+};
 
 export function Main() {
+  const { language } = useLanguage();
+  const highlights = HIGHLIGHTS[language];
+  const content = {
+    en: {
+      badge: 'Software Engineer · Full Stack Developer (Backend-focused)',
+      headline: 'I build SaaS products and production applications with backend ownership and full stack delivery.',
+      summary:
+        'I work across architecture, backend services, and frontend experiences to deliver reliable software in production.',
+      cta: 'Let’s work together',
+      download: 'Download Resume',
+      filename: 'Deyvid-Gondim-Resume.pdf'
+    },
+    pt: {
+      badge: 'Engenheiro de Software · Desenvolvedor Full Stack (Foco em Backend)',
+      headline: 'Construo produtos SaaS e aplicações em produção com foco em backend e entrega full stack.',
+      summary:
+        'Atuo entre arquitetura, serviços de backend e experiências frontend para entregar software confiável em produção.',
+      cta: 'Vamos trabalhar juntos',
+      download: 'Baixar CV',
+      filename: 'Deyvid-Gondim-Curriculo.pdf'
+    }
+  }[language];
+
   // tenta forçar o download do PDF (fallback para abrir em nova aba)
   const downloadResume = async (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -36,7 +76,7 @@ export function Main() {
       const blobUrl = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = blobUrl;
-      a.download = 'Deyvid-Gondim-Curriculo.pdf';
+      a.download = content.filename;
       document.body.appendChild(a);
       a.click();
       a.remove();
@@ -59,19 +99,19 @@ export function Main() {
       <div className="mx-auto flex min-h-screen max-w-[1440px] flex-col justify-center gap-12 px-6 pb-24 pt-32">
         <Reveal>
           <span className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/70 px-4 py-1 text-sm font-medium text-aurora shadow-[0_14px_28px_-22px_rgba(31,157,109,0.65)] backdrop-blur-sm dark:border-white/10 dark:bg-white/5 dark:text-neon">
-            Desenvolvedor Fullstack · Arquitetura distribuída
+            {content.badge}
           </span>
         </Reveal>
 
         <Reveal delay={100}>
           <h1 className="max-w-6xl text-4xl font-semibold leading-tight text-slate-900 dark:text-white md:text-6xl">
-            Construo experiências digitais completas — do design da interface aos microsserviços em produção.
+            {content.headline}
           </h1>
         </Reveal>
 
         <Reveal delay={200}>
           <p className="max-w-4xl text-lg text-slate-700 dark:text-slate/90 md:text-xl">
-            Eu ajudo empresas a lançarem e escalarem produtos. Lidero arquiteturas modernas, crio interfaces de alta performance e integro serviços confiáveis em ambientes conteinerizados.
+            {content.summary}
           </p>
         </Reveal>
 
@@ -81,23 +121,23 @@ export function Main() {
               href="mailto:deyvidgondim@outlook.com"
               className="group flex items-center gap-2 rounded-full bg-aurora px-6 py-3 text-base font-semibold text-white dark:text-charcoal transition hover:bg-aurora/90 dark:hover:bg-neon"
             >
-              Vamos construir juntos
+              {content.cta}
               <FiArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </a>
             <a
               href={encodeURI('/resume.pdf')}
               onClick={downloadResume}
-              download="Deyvid-Gondim-Curriculo.pdf"
+              download={content.filename}
               className="group flex items-center gap-2 rounded-full border border-white/70 bg-white/80 px-6 py-3 text-base font-semibold text-slate-900 shadow-[0_18px_38px_-28px_rgba(31,157,109,0.6)] backdrop-blur-sm transition hover:border-aurora hover:text-aurora dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:border-neon/60 dark:hover:text-neon"
             >
-              Baixar CV
+              {content.download}
               <FiDownload className="transition-transform group-hover:-translate-y-0.5" />
             </a>
           </div>
         </Reveal>
 
         <div className="grid gap-6 md:grid-cols-3">
-          {HIGHLIGHTS.map((highlight, index) => (
+          {highlights.map((highlight, index) => (
             <Reveal key={highlight.label} delay={400 + index * 120}>
               <div className="glass-panel relative flex h-full flex-col gap-3 overflow-hidden rounded-2xl border border-white/60 bg-white/80 p-6 shadow-aurora backdrop-blur-sm dark:border-white/10 dark:bg-white/5 dark:shadow-card">
                 <span className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-aurora via-emerald-400 to-sunrise dark:from-neon dark:via-emerald-400 dark:to-aurora" />

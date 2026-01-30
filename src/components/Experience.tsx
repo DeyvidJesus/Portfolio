@@ -1,62 +1,119 @@
 import { Reveal } from './Reveal';
+import { useLanguage } from '../hooks/useLanguage';
 
-const EXPERIENCES = [
-  {
-    company: 'GoMech',
-    role: 'Desenvolvedor Fullstack',
-    period: '2024 – atual',
-    summary:
-      'Responsável por toda a arquitetura do SaaS multi-tenant de gestão de oficinas, cobrindo frontend, backend, IA e infraestrutura.',
-    achievements: [
-      'Arquitetura completa com módulos de clientes, veículos, estoque, financeiro, conversas, relatórios e IA.',
-      'Implementação de microsserviço de IA com agentes SQL, Chat, Router e Charts conectados ao banco principal.',
-      'Automação de deploy com Docker, Nginx, VPS e pipelines contínuos, garantindo segurança e escalabilidade.'
-    ],
-    technologies:
-      'React 19, TypeScript, Vite, TanStack Router/Query, Tailwind, Java, Spring Boot, FastAPI, LangChain, PostgreSQL, Docker, Nginx'
+const CONTENT = {
+  en: {
+    title: 'Professional Experience',
+    subtitle:
+      'Backend ownership, architecture, and production delivery across SaaS and enterprise ecommerce.',
+    experiences: [
+      {
+        company: 'GoMech',
+        role: 'Co-Founder & Software Engineer',
+        period: 'Jul 2025 – present',
+        summary:
+          'Co-founded the product and owned the technical architecture for an automotive service management SaaS.',
+        achievements: [
+          'Built backend services with Java and Spring Boot.',
+          'Implemented authentication, authorization, and core business logic.',
+          'Designed and maintained PostgreSQL data models.',
+          'Built frontend applications with React and TypeScript.',
+          'Deployed services with Docker on cloud/VPS infrastructure.',
+          'Owned technical decisions, feature delivery, and system evolution.'
+        ],
+        technologies:
+          'Java · Spring Boot · PostgreSQL · React · TypeScript · Docker'
+      },
+      {
+        company: 'Econverse',
+        role: 'Frontend / Full Stack Developer',
+        period: 'Mar 2025 – present',
+        summary:
+          'Worked on an enterprise ecommerce platform, building frontend and backend features for production applications.',
+        achievements: [
+          'Developed and maintained high-traffic production applications.',
+          'Built and integrated backend services with Node.js and GraphQL.',
+          'Worked extensively with React, Next.js, and TypeScript.',
+          'Improved performance, reliability, and developer experience.',
+          'Collaborated with product, backend, and business teams.',
+          'Participated in code reviews and agile ceremonies.'
+        ],
+        technologies: 'React · Next.js · TypeScript · Node.js · GraphQL · SASS · Tailwind CSS'
+      },
+      {
+        company: 'Econverse',
+        role: 'Frontend Developer Intern',
+        period: 'Jun 2024 – Mar 2025',
+        summary:
+          'Built UI components and integrated APIs as part of agile delivery.',
+        achievements: [
+          'Built responsive UI components with React, HTML, CSS, and SASS.',
+          'Integrated REST APIs.',
+          'Worked in agile teams (planning, reviews, retrospectives).'
+        ],
+        technologies: 'React · JavaScript · HTML · CSS · SASS · REST APIs'
+      }
+    ]
   },
-  {
-    company: 'Econverse',
-    role: 'Desenvolvedor Frontend Júnior',
-    period: 'mar 2025 – atual',
-    summary:
-      'Atuação na evolução técnica de plataformas completas como NKStore e Alphabeto, criando experiências performáticas e escaláveis.',
-    achievements: [
-      'Reestruturação de componentes, rotas dinâmicas e integrações internas com foco em performance.',
-      'Construção de APIs e serviços Node.js para automações e comunicação entre módulos.',
-      'Entrega de landing pages otimizadas para SEO, responsividade e carregamento rápido.'
-    ],
-    technologies: 'React, Next.js, TypeScript, Node.js, Tailwind, SASS, arquitetura SPA/SSR'
-  },
-  {
-    company: 'Econverse',
-    role: 'Estagiário em Desenvolvimento Frontend',
-    period: 'jun 2024 – mar 2025',
-    summary:
-      'Suporte no desenvolvimento de interfaces e componentes reutilizáveis para projetos de médio e grande porte.',
-    achievements: [
-      'Implementação de componentes responsivos em projetos como NKStore e Alphabeto.',
-      'Colaboração em fluxos dinâmicos, navegação e integrações com APIs REST.',
-      'Desenvolvimento de funcionalidades internas com Node.js seguindo boas práticas de UX.'
-    ],
-    technologies: 'React, TypeScript, JavaScript, Node.js, HTML5, CSS3, SASS, APIs REST'
-  },
-  {
-    company: 'Projetos Freelancer',
-    role: 'Desenvolvedor Frontend',
-    period: 'ago 2023 – jun 2024',
-    summary:
-      'Criação de aplicações, dashboards e landing pages sob medida para clientes de segmentos variados.',
-    achievements: [
-      'Desenvolvimento end-to-end, da prototipação à publicação.',
-      'Implementação de lógicas de negócio, dashboards e integrações personalizadas.',
-      'Interfaces responsivas com foco em acessibilidade, performance e SEO.'
-    ],
-    technologies: 'React, TypeScript, Tailwind, PHP, MySQL, HTML, CSS'
+  pt: {
+    title: 'Experiências Profissionais',
+    subtitle:
+      'Ownership de backend, arquitetura e entrega em produção em SaaS e ecommerce enterprise.',
+    experiences: [
+      {
+        company: 'GoMech',
+        role: 'Co-Fundador & Engenheiro de Software',
+        period: 'jul 2025 – atual',
+        summary:
+          'Co-fundei o produto e assumi a arquitetura técnica de um SaaS de gestão automotiva.',
+        achievements: [
+          'Construí serviços backend com Java e Spring Boot.',
+          'Implementei autenticação, autorização e lógica de negócio.',
+          'Modelei e mantive dados relacionais em PostgreSQL.',
+          'Desenvolvi aplicações frontend com React e TypeScript.',
+          'Realizei deploys com Docker em infraestrutura cloud/VPS.',
+          'Assumi decisões técnicas, entrega de features e evolução do sistema.'
+        ],
+        technologies:
+          'Java · Spring Boot · PostgreSQL · React · TypeScript · Docker'
+      },
+      {
+        company: 'Econverse',
+        role: 'Desenvolvedor Frontend / Full Stack',
+        period: 'mar 2025 – atual',
+        summary:
+          'Atuação em plataforma enterprise de ecommerce com entregas frontend e backend em produção.',
+        achievements: [
+          'Desenvolvi e mantive aplicações de alto tráfego em produção.',
+          'Construí e integrei serviços backend com Node.js e GraphQL.',
+          'Trabalhei com React, Next.js e TypeScript.',
+          'Melhorei performance, confiabilidade e experiência de desenvolvimento.',
+          'Colaborei com times de produto, backend e negócio.',
+          'Participei de code reviews e cerimônias ágeis.'
+        ],
+        technologies: 'React · Next.js · TypeScript · Node.js · GraphQL · SASS · Tailwind CSS'
+      },
+      {
+        company: 'Econverse',
+        role: 'Estagiário em Desenvolvimento Frontend',
+        period: 'jun 2024 – mar 2025',
+        summary:
+          'Construção de componentes de UI e integrações com APIs em times ágeis.',
+        achievements: [
+          'Criei componentes responsivos com React, HTML, CSS e SASS.',
+          'Integrei APIs REST.',
+          'Atuei em times ágeis (planning, reviews, retrospectives).'
+        ],
+        technologies: 'React · JavaScript · HTML · CSS · SASS · APIs REST'
+      }
+    ]
   }
-];
+};
 
 export function Experience() {
+  const { language } = useLanguage();
+  const content = CONTENT[language];
+
   return (
     <section id="experiencias" className="relative mx-auto max-w-[1440px] px-6 py-24">
       <div className="pointer-events-none absolute inset-y-0 left-4 -z-10 hidden w-2 rounded-full bg-gradient-to-b from-aurora/50 via-sunrise/40 to-skyglass/40 dark:block" />
@@ -64,15 +121,15 @@ export function Experience() {
 
       <Reveal>
         <div className="flex flex-col gap-4">
-          <h2 className="section-title text-slate-900 dark:text-white">Experiências Profissionais</h2>
+          <h2 className="section-title text-slate-900 dark:text-white">{content.title}</h2>
           <p className="section-subtitle">
-            Liderança técnica, evolução arquitetural e entrega de produtos completos para diferentes contextos de negócio.
+            {content.subtitle}
           </p>
         </div>
       </Reveal>
 
       <div className="mt-12 space-y-10 border-l border-slate-200/70 dark:border-white/10 pl-6 md:pl-10">
-        {EXPERIENCES.map((experience, index) => (
+        {content.experiences.map((experience, index) => (
           <Reveal key={`${experience.company}-${experience.role}`} delay={index * 120}>
             <article className="relative overflow-hidden rounded-2xl border border-white/70 bg-white/85 p-6 shadow-aurora backdrop-blur-sm transition hover:-translate-y-1 hover:border-aurora hover:shadow-[0_35px_60px_-35px_rgba(31,157,109,0.55)] dark:border-white/10 dark:bg-white/5 dark:hover:border-neon/40 dark:hover:shadow-glow">
               <span className="absolute -left-3 top-6 h-5 w-5 rounded-full border-4 border-white bg-gradient-to-br from-aurora to-sunrise shadow-[0_10px_30px_-12px_rgba(31,157,109,0.8)] dark:border-charcoal dark:bg-aurora dark:shadow-glow" />
