@@ -7,8 +7,20 @@ import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';
 import BackToTopButton from './components/BackToTopBtn';
 import { ThemeProvider } from './contexts/ThemeContext';
+import { LanguageProvider } from './contexts/LanguageContext';
+import { useLanguage } from './hooks/useLanguage';
 
 function AppContent() {
+  const { language } = useLanguage();
+  const footerCopy =
+    language === 'en'
+      ? 'Built by '
+      : 'Construído por ';
+  const footerRole =
+    language === 'en'
+      ? 'Software Engineer · Full Stack Developer (Backend-focused)'
+      : 'Engenheiro de Software · Desenvolvedor Full Stack (Foco em Backend)';
+
   return (
     <div className="relative min-h-screen overflow-hidden bg-white dark:bg-night text-slate-900 dark:text-white transition-colors duration-300">
       <div className="pointer-events-none absolute inset-0 -z-10">
@@ -31,7 +43,12 @@ function AppContent() {
       </main>
       <footer className="border-t border-slate-200/60 bg-gradient-to-r via-skyglass/70 to-white/90 py-8 text-center text-sm text-slate-600 backdrop-blur-md dark:border-white/5 dark:bg-charcoal/70 dark:text-slate/80">
         <p>
-          Construído por <strong className="bg-gradient-to-r from-aurora via-emerald-500 to-sunrise bg-clip-text text-transparent dark:text-neon">Deyvid Gondim</strong> · Desenvolvedor Fullstack · {new Date().getFullYear()}
+          {footerCopy}
+          <strong className="bg-gradient-to-r from-aurora via-emerald-500 to-sunrise bg-clip-text text-transparent dark:text-neon">Deyvid Gondim</strong>
+          {' · '}
+          {footerRole}
+          {' · '}
+          {new Date().getFullYear()}
         </p>
       </footer>
       <BackToTopButton />
@@ -42,7 +59,9 @@ function AppContent() {
 function App() {
   return (
     <ThemeProvider>
-      <AppContent />
+      <LanguageProvider>
+        <AppContent />
+      </LanguageProvider>
     </ThemeProvider>
   );
 }
