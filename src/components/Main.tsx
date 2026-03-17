@@ -6,30 +6,30 @@ import { useLanguage } from '../hooks/useLanguage';
 const HIGHLIGHTS = {
   en: [
     {
-      label: 'Backend-focused full stack delivery',
-      description: 'Architecture ownership, Java/Spring Boot services, and core business logic for SaaS products.'
+      label: 'Frontend engineering in production',
+      description: 'React and TypeScript delivery for production-grade web applications used by real users.'
     },
     {
-      label: 'Production web applications',
-      description: 'React, Next.js, and TypeScript interfaces built alongside backend integrations.'
+      label: 'Full-stack integration',
+      description: 'Node.js and GraphQL API integration, plus backend work with Java and Spring Boot.'
     },
     {
-      label: 'Infrastructure and delivery',
-      description: 'Docker deployments, CI/CD workflows, and cloud/VPS environments.'
+      label: 'Platform experience',
+      description: 'Experience adapting solutions across different platforms, including VTEX, Shopify, Wake, and Deco.cx.'
     }
   ],
   pt: [
     {
-      label: 'Entrega full stack com foco em backend',
-      description: 'Arquitetura técnica, serviços em Java/Spring Boot e lógica de negócio para SaaS.'
+      label: 'Engenharia frontend em produção',
+      description: 'Entrega com React e TypeScript para aplicações web em produção e uso real.'
     },
     {
-      label: 'Aplicações web em produção',
-      description: 'Interfaces em React, Next.js e TypeScript com integrações de backend.'
+      label: 'Integração full stack',
+      description: 'Integração com APIs Node.js e GraphQL, além de experiência backend com Java e Spring Boot.'
     },
     {
-      label: 'Infraestrutura e entrega',
-      description: 'Deploys com Docker, fluxos de CI/CD e ambientes cloud/VPS.'
+      label: 'Experiência em plataformas',
+      description: 'Atuação prática nos ecossistemas VTEX, Shopify, Wake e Deco.cx.'
     }
   ]
 };
@@ -39,19 +39,19 @@ export function Main() {
   const highlights = HIGHLIGHTS[language];
   const content = {
     en: {
-      badge: 'Software Engineer · Full Stack Developer (Backend-focused)',
-      headline: 'I build SaaS products and production applications with backend ownership and full stack delivery.',
+      badge: 'Software Engineer · Frontend-focused Full Stack',
+      headline: 'I build production web applications with React and TypeScript.',
       summary:
-        'I work across architecture, backend services, and frontend experiences to deliver reliable software in production.',
+        'I deliver frontend features end-to-end, integrating Node.js and GraphQL services while contributing to scalable backend systems.',
       cta: 'Let’s work together',
       download: 'Download Resume',
       filename: 'Deyvid-Gondim-Resume.pdf'
     },
     pt: {
-      badge: 'Engenheiro de Software · Desenvolvedor Full Stack (Foco em Backend)',
-      headline: 'Construo produtos SaaS e aplicações em produção com foco em backend e entrega full stack.',
+      badge: 'Engenheiro de Software · Full Stack com foco em Frontend',
+      headline: 'Desenvolvo aplicações web em produção com React e TypeScript.',
       summary:
-        'Atuo entre arquitetura, serviços de backend e experiências frontend para entregar software confiável em produção.',
+        'Entrego features frontend de ponta a ponta, integrando serviços Node.js e GraphQL e contribuindo para sistemas backend escaláveis.',
       cta: 'Vamos trabalhar juntos',
       download: 'Baixar CV',
       filename: 'Deyvid-Gondim-Curriculo.pdf'

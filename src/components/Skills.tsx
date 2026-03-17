@@ -4,37 +4,61 @@ import { useLanguage } from '../hooks/useLanguage';
 const CONTENT = {
   en: {
     title: 'Stack & Skills',
-    subtitle: 'Core technologies used across backend, frontend, and infrastructure.',
+    subtitle: 'Core technologies used in production web application development and full-stack delivery.',
     groups: [
       {
+        title: 'Languages',
+        items: ['JavaScript', 'TypeScript', 'Java', 'Python']
+      },
+      {
         title: 'Frontend',
-        items: ['React.js', 'Next.js', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'SASS', 'Tailwind CSS']
+        items: ['React', 'HTML', 'CSS', 'SASS']
       },
       {
-        title: 'Backend & Data',
-        items: ['Java (Spring Boot)', 'Node.js', 'GraphQL', 'REST APIs', 'PostgreSQL', 'MongoDB']
+        title: 'Backend',
+        items: ['Node.js', 'GraphQL', 'REST APIs', 'Spring Boot']
       },
       {
-        title: 'Infrastructure & Tooling',
-        items: ['Docker', 'Git & GitHub', 'CI/CD', 'Google Cloud Platform (GCP)']
+        title: 'Platforms',
+        items: ['VTEX', 'Shopify', 'Wake', 'Deco.cx', 'WordPress']
+      },
+      {
+        title: 'DevOps & Tooling',
+        items: ['Docker', 'CI/CD', 'Git', 'Linux', 'Google Cloud']
+      },
+      {
+        title: 'Concepts',
+        items: ['Headless Commerce', 'API Design', 'System Architecture']
       }
     ]
   },
   pt: {
     title: 'Stack & Habilidades',
-    subtitle: 'Tecnologias centrais usadas em backend, frontend e infraestrutura.',
+    subtitle: 'Tecnologias centrais usadas no desenvolvimento de aplicações web em produção e implementação full stack.',
     groups: [
       {
+        title: 'Linguagens',
+        items: ['JavaScript', 'TypeScript', 'Java', 'Python']
+      },
+      {
         title: 'Frontend',
-        items: ['React.js', 'Next.js', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'SASS', 'Tailwind CSS']
+        items: ['React', 'HTML', 'CSS', 'SASS']
       },
       {
-        title: 'Backend & Dados',
-        items: ['Java (Spring Boot)', 'Node.js', 'GraphQL', 'APIs REST', 'PostgreSQL', 'MongoDB']
+        title: 'Backend',
+        items: ['Node.js', 'GraphQL', 'APIs REST', 'Spring Boot']
       },
       {
-        title: 'Infraestrutura & Ferramentas',
-        items: ['Docker', 'Git & GitHub', 'CI/CD', 'Google Cloud Platform (GCP)']
+        title: 'Plataformas',
+        items: ['VTEX', 'Shopify', 'Wake', 'Deco.cx', 'WordPress']
+      },
+      {
+        title: 'DevOps & Ferramentas',
+        items: ['Docker', 'CI/CD', 'Git', 'Linux', 'Google Cloud']
+      },
+      {
+        title: 'Conceitos',
+        items: ['Headless Commerce', 'Design de APIs', 'Arquitetura de Sistemas']
       }
     ]
   }

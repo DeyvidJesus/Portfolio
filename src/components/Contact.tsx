@@ -7,17 +7,17 @@ export function Contact() {
   const content = {
     en: {
       eyebrow: 'Next step',
-      title: 'Ready to accelerate your next product?',
+      title: 'Let’s build reliable software for your product.',
       description:
-        'I’m ready to support everything from architecture design to the implementation of critical features. Reach out so we can build complete solutions with quality, security, and a scaling rhythm.',
-      cta: 'Let’s talk'
+        'I’m available for software engineering roles focused on web applications, frontend engineering, and full-stack development. If you need someone who can ship production features, improve UX, and work closely with APIs and systems, feel free to reach out.',
+      cta: 'Get in touch'
     },
     pt: {
       eyebrow: 'Próximo passo',
-      title: 'Vamos acelerar seu próximo produto?',
+      title: 'Vamos construir software confiável para o seu produto.',
       description:
-        'Estou pronto para apoiar desde a concepção da arquitetura até a implementação de features críticas. Entre em contato para construirmos soluções completas com qualidade, segurança e ritmo de escala.',
-      cta: 'Falar comigo'
+        'Estou disponível para oportunidades em engenharia de software com foco em aplicações web, frontend e atuação full stack. Se você busca alguém para entregar funcionalidades em produção, melhorar UX e trabalhar próximo de APIs e sistemas, vamos conversar.',
+      cta: 'Entrar em contato'
     }
   }[language];
 
