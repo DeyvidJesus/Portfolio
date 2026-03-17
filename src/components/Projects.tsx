@@ -15,72 +15,90 @@ const CONTENT: Record<'en' | 'pt', { title: string; subtitle: string; projects: 
   en: {
     title: 'Featured Projects',
     subtitle:
-      'SaaS and enterprise ecommerce projects with production backend and frontend delivery.',
+      'Selected projects highlighting frontend delivery, full-stack implementation, and system design.',
     projects: [
       {
         title: 'GoMech',
         company: 'GoMech',
         description:
-          'SaaS product for automotive service management with backend ownership and full stack delivery.',
+          'Full-stack SaaS platform for mechanical workshop management.',
         achievements: [
-          'Owned technical architecture and system evolution.',
-          'Built Java and Spring Boot backend services with authentication, authorization, and core business logic.',
-          'Designed and maintained PostgreSQL data models.',
-          'Built React and TypeScript frontend applications.',
-          'Deployed services with Docker on cloud/VPS infrastructure.'
+          'Built backend services with Java and Spring Boot to support workshop operations and business workflows.',
+          'Developed a React and TypeScript frontend focused on usability and operational efficiency.',
+          'Containerized services with Docker and structured CI/CD pipelines for consistent delivery.',
+          'Explored AI-based automations to improve workflow execution and reduce manual tasks.'
         ],
-        stack: 'Java · Spring Boot · PostgreSQL · React · TypeScript · Docker'
+        stack: 'Java · Spring Boot · React · TypeScript · Docker · CI/CD'
       },
       {
-        title: 'Econverse Platform',
-        company: 'Econverse',
+        title: 'Email Signature Creator',
+        company: 'Freelance Project',
         description:
-          'Enterprise ecommerce platform with production frontend and backend development.',
+          'Web application for generating customizable professional email signatures.',
         achievements: [
-          'Developed and maintained high-traffic production applications.',
-          'Built and integrated backend services with Node.js and GraphQL.',
-          'Worked extensively with React, Next.js, and TypeScript.',
-          'Improved performance, reliability, and developer experience.',
-          'Collaborated with product, backend, and business teams.',
-          'Participated in code reviews and agile ceremonies.'
+          'Delivered for an international freelance client with practical customization requirements.',
+          'Focused on intuitive UI flows that allow users to generate signatures quickly.',
+          'Built the project for direct usability in real communication workflows.'
         ],
-        stack: 'React · Next.js · TypeScript · Node.js · GraphQL · SASS · Tailwind CSS'
+        stack: 'Web Application · UI Implementation',
+        link: 'https://emailsignaturecreator.com'
+      },
+      {
+        title: 'Fitness Training Generator',
+        company: 'Personal Project',
+        description:
+          'Workout-planning system that generates personalized training plans based on user attributes.',
+        achievements: [
+          'Designed generation logic to build customized workout routines from input variables.',
+          'Structured user profile data and an exercise library to support plan generation.',
+          'Built as a practical algorithm-focused project combining product thinking and implementation.'
+        ],
+        stack: 'Algorithm Design · User Profiles · Workout Generation'
       }
     ]
   },
   pt: {
     title: 'Projetos em Destaque',
     subtitle:
-      'Projetos SaaS e ecommerce enterprise com entrega em produção de backend e frontend.',
+      'Projetos selecionados com foco em entrega frontend, implementação full stack e construção de sistemas.',
     projects: [
       {
         title: 'GoMech',
         company: 'GoMech',
         description:
-          'Produto SaaS para gestão automotiva com ownership de backend e entrega full stack.',
+          'Plataforma SaaS full stack para gestão de oficinas mecânicas.',
         achievements: [
-          'Assumi arquitetura técnica e evolução do sistema.',
-          'Construí serviços backend em Java e Spring Boot com autenticação, autorização e lógica de negócio.',
-          'Modelei e mantive dados relacionais em PostgreSQL.',
-          'Desenvolvi aplicações frontend em React e TypeScript.',
-          'Realizei deploys com Docker em infraestrutura cloud/VPS.'
+          'Construção de serviços backend com Java e Spring Boot para suportar operações e fluxos de negócio da oficina.',
+          'Desenvolvimento do frontend com React e TypeScript com foco em usabilidade e eficiência operacional.',
+          'Containerização com Docker e estruturação de pipelines de CI/CD para entregas consistentes.',
+          'Exploração de automações com IA para reduzir tarefas manuais e otimizar fluxos.'
         ],
-        stack: 'Java · Spring Boot · PostgreSQL · React · TypeScript · Docker'
+        stack: 'Java · Spring Boot · React · TypeScript · Docker · CI/CD'
       },
       {
-        title: 'Plataforma Econverse',
-        company: 'Econverse',
+        title: 'Email Signature Creator',
+        company: 'Projeto Freelance',
         description:
-          'Plataforma enterprise de ecommerce com entregas frontend e backend em produção.',
+          'Aplicação web para gerar assinaturas de email personalizáveis.',
         achievements: [
-          'Desenvolvi e mantive aplicações de alto tráfego em produção.',
-          'Construí e integrei serviços backend com Node.js e GraphQL.',
-          'Trabalhei com React, Next.js e TypeScript.',
-          'Melhorei performance, confiabilidade e experiência de desenvolvimento.',
-          'Colaborei com times de produto, backend e negócio.',
-          'Participei de code reviews e cerimônias ágeis.'
+          'Entregue para cliente freelance internacional com requisitos práticos de personalização.',
+          'Foco em fluxo de interface intuitivo para geração rápida de assinaturas.',
+          'Construído para uso direto em cenários reais de comunicação profissional.'
         ],
-        stack: 'React · Next.js · TypeScript · Node.js · GraphQL · SASS · Tailwind CSS'
+        stack: 'Aplicação Web · Implementação de UI',
+        link: 'https://emailsignaturecreator.com'
+      },
+      {
+        title: 'Fitness Training Generator',
+        company: 'Projeto Pessoal',
+        description:
+          'Sistema de geração de treinos personalizados com base nos atributos do usuário.',
+        achievements: [
+          'Criação de lógica de geração para montar rotinas customizadas a partir de variáveis de entrada.',
+          'Estruturação de perfis de usuário e biblioteca de exercícios para suportar a geração de planos.',
+          'Projeto prático com foco em algoritmo, produto e implementação.'
+        ],
+        stack: 'Design de Algoritmos · Perfis de Usuário · Geração de Treinos'
       }
     ]
   }

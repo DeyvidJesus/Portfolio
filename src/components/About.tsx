@@ -3,51 +3,51 @@ import { useLanguage } from '../hooks/useLanguage';
 
 const CONTENT = {
   en: {
-    title: 'Technical Summary',
+    title: 'About Me',
     description:
-      'Software engineer and full stack developer with a backend focus, working across architecture, backend services, and frontend delivery.',
+      'Software engineer with strong frontend expertise and full-stack experience. I build modern web applications used in production, with emphasis on clean UI implementation, API integration, and reliable delivery.',
     focusAreas: [
       {
-        title: 'Backend ownership',
-        description: 'Java and Spring Boot services, authentication, authorization, and core business logic.'
+        title: 'Production ecommerce engineering',
+        description: 'Experience delivering storefront features for multiple ecommerce brands across VTEX, Shopify, Wake, and Deco.cx.'
       },
       {
-        title: 'Frontend delivery',
-        description: 'React and TypeScript applications with production-focused UI work.'
+        title: 'Frontend-first, full-stack capable',
+        description: 'Daily work with React, TypeScript, HTML, CSS, and SASS, plus backend integrations with Node.js and GraphQL APIs.'
       },
       {
-        title: 'Infrastructure and delivery',
-        description: 'Docker deployments, CI/CD workflows, and cloud/VPS environments.'
+        title: 'Systems and scalability mindset',
+        description: 'Focused on architecture decisions, performance improvements, and building SaaS systems that can evolve with product growth.'
       }
     ],
     stats: [
-      { value: '3+ years', label: 'professional experience' },
-      { value: 'Remote-ready', label: 'Brazil · US roles' },
-      { value: 'Full stack', label: 'Java · Spring Boot · React · Next.js · PostgreSQL · Docker' }
+      { value: 'Mar 2025–Now', label: 'Frontend Developer at Econverse' },
+      { value: 'Jun 2024–Mar 2025', label: 'Software Developer Intern at Econverse' },
+      { value: 'Full stack', label: 'React · TypeScript · Node.js · GraphQL · Java · Spring Boot' }
     ]
   },
   pt: {
-    title: 'Resumo Técnico',
+    title: 'Sobre Mim',
     description:
-      'Engenheiro de software e desenvolvedor full stack com foco em backend, atuando em arquitetura, serviços backend e entrega frontend.',
+      'Engenheiro de software com forte experiência em frontend e atuação full stack. Desenvolvo aplicações web modernas em produção, com foco em implementação de UI, integração de APIs e entrega confiável.',
     focusAreas: [
       {
-        title: 'Ownership de backend',
-        description: 'Serviços em Java e Spring Boot, autenticação, autorização e lógica de negócio.'
+        title: 'Engenharia de ecommerce em produção',
+        description: 'Experiência entregando features de storefront para múltiplas marcas em VTEX, Shopify, Wake e Deco.cx.'
       },
       {
-        title: 'Entrega frontend',
-        description: 'Aplicações em React e TypeScript com foco em produção.'
+        title: 'Frontend como base, full stack na prática',
+        description: 'Atuação diária com React, TypeScript, HTML, CSS e SASS, além de integrações backend com Node.js e GraphQL.'
       },
       {
-        title: 'Infraestrutura e entrega',
-        description: 'Deploys com Docker, fluxos de CI/CD e ambientes cloud/VPS.'
+        title: 'Visão de sistemas e escala',
+        description: 'Foco em decisões de arquitetura, melhorias de performance e construção de SaaS que evoluem com o produto.'
       }
     ],
     stats: [
-      { value: '3+ anos', label: 'de experiência profissional' },
-      { value: 'Remoto', label: 'Brasil · vagas nos EUA' },
-      { value: 'Full stack', label: 'Java · Spring Boot · React · Next.js · PostgreSQL · Docker' }
+      { value: 'mar 2025–atual', label: 'Frontend Developer na Econverse' },
+      { value: 'jun 2024–mar 2025', label: 'Estágio em Desenvolvimento na Econverse' },
+      { value: 'Full stack', label: 'React · TypeScript · Node.js · GraphQL · Java · Spring Boot' }
     ]
   }
 };
