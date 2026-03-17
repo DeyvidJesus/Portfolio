@@ -9,14 +9,14 @@ export function Contact() {
       eyebrow: 'Next step',
       title: 'Let’s build reliable software for your product.',
       description:
-        'I’m available for software engineering roles focused on frontend and full-stack development. If you need someone who can ship production features, improve UX, and work closely with APIs and systems, feel free to reach out.',
+        'I’m available for software engineering roles focused on web applications, frontend engineering, and full-stack development. If you need someone who can ship production features, improve UX, and work closely with APIs and systems, feel free to reach out.',
       cta: 'Get in touch'
     },
     pt: {
       eyebrow: 'Próximo passo',
       title: 'Vamos construir software confiável para o seu produto.',
       description:
-        'Estou disponível para oportunidades em engenharia de software com foco em frontend e atuação full stack. Se você busca alguém para entregar funcionalidades em produção, melhorar UX e trabalhar próximo de APIs e sistemas, vamos conversar.',
+        'Estou disponível para oportunidades em engenharia de software com foco em aplicações web, frontend e atuação full stack. Se você busca alguém para entregar funcionalidades em produção, melhorar UX e trabalhar próximo de APIs e sistemas, vamos conversar.',
       cta: 'Entrar em contato'
     }
   }[language];

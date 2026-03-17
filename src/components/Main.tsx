@@ -7,7 +7,7 @@ const HIGHLIGHTS = {
   en: [
     {
       label: 'Frontend engineering in production',
-      description: 'React and TypeScript delivery for multiple ecommerce storefronts used by real customers.'
+      description: 'React and TypeScript delivery for production-grade web applications used by real users.'
     },
     {
       label: 'Full-stack integration',
@@ -15,13 +15,13 @@ const HIGHLIGHTS = {
     },
     {
       label: 'Platform experience',
-      description: 'Hands-on delivery across VTEX, Shopify, Wake, and Deco.cx ecosystems.'
+      description: 'Experience adapting solutions across different platforms, including VTEX, Shopify, Wake, and Deco.cx.'
     }
   ],
   pt: [
     {
       label: 'Engenharia frontend em produção',
-      description: 'Entrega com React e TypeScript para múltiplos storefronts de ecommerce em uso real.'
+      description: 'Entrega com React e TypeScript para aplicações web em produção e uso real.'
     },
     {
       label: 'Integração full stack',
@@ -40,7 +40,7 @@ export function Main() {
   const content = {
     en: {
       badge: 'Software Engineer · Frontend-focused Full Stack',
-      headline: 'I build production ecommerce experiences with React and TypeScript.',
+      headline: 'I build production web applications with React and TypeScript.',
       summary:
         'I deliver frontend features end-to-end, integrating Node.js and GraphQL services while contributing to scalable backend systems.',
       cta: 'Let’s work together',
@@ -49,7 +49,7 @@ export function Main() {
     },
     pt: {
       badge: 'Engenheiro de Software · Full Stack com foco em Frontend',
-      headline: 'Desenvolvo experiências de ecommerce em produção com React e TypeScript.',
+      headline: 'Desenvolvo aplicações web em produção com React e TypeScript.',
       summary:
         'Entrego features frontend de ponta a ponta, integrando serviços Node.js e GraphQL e contribuindo para sistemas backend escaláveis.',
       cta: 'Vamos trabalhar juntos',

@@ -15,7 +15,7 @@ const CONTENT: Record<'en' | 'pt', { title: string; subtitle: string; projects: 
   en: {
     title: 'Featured Projects',
     subtitle:
-      'Selected projects highlighting frontend delivery, full-stack implementation, and system design.',
+      'Selected projects highlighting web application delivery, full-stack implementation, and system design.',
     projects: [
       {
         title: 'GoMech',
@@ -60,7 +60,7 @@ const CONTENT: Record<'en' | 'pt', { title: string; subtitle: string; projects: 
   pt: {
     title: 'Projetos em Destaque',
     subtitle:
-      'Projetos selecionados com foco em entrega frontend, implementação full stack e construção de sistemas.',
+      'Projetos selecionados com foco em entrega de aplicações web, implementação full stack e construção de sistemas.',
     projects: [
       {
         title: 'GoMech',

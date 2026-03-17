@@ -4,7 +4,7 @@ import { useLanguage } from '../hooks/useLanguage';
 const CONTENT = {
   en: {
     title: 'Stack & Skills',
-    subtitle: 'Core technologies used in production frontend work and full-stack delivery.',
+    subtitle: 'Core technologies used in production web application development and full-stack delivery.',
     groups: [
       {
         title: 'Languages',
@@ -34,7 +34,7 @@ const CONTENT = {
   },
   pt: {
     title: 'Stack & Habilidades',
-    subtitle: 'Tecnologias centrais usadas em entregas frontend em produção e implementação full stack.',
+    subtitle: 'Tecnologias centrais usadas no desenvolvimento de aplicações web em produção e implementação full stack.',
     groups: [
       {
         title: 'Linguagens',

@@ -8,8 +8,8 @@ const CONTENT = {
       'Software engineer with strong frontend expertise and full-stack experience. I build modern web applications used in production, with emphasis on clean UI implementation, API integration, and reliable delivery.',
     focusAreas: [
       {
-        title: 'Production ecommerce engineering',
-        description: 'Experience delivering storefront features for multiple ecommerce brands across VTEX, Shopify, Wake, and Deco.cx.'
+        title: 'Production web engineering',
+        description: 'Experience delivering production web features across different platforms, including VTEX, Shopify, Wake, and Deco.cx.'
       },
       {
         title: 'Frontend-first, full-stack capable',
@@ -17,7 +17,7 @@ const CONTENT = {
       },
       {
         title: 'Systems and scalability mindset',
-        description: 'Focused on architecture decisions, performance improvements, and building SaaS systems that can evolve with product growth.'
+        description: 'Focused on architecture decisions, performance improvements, and building scalable systems that evolve with product growth.'
       }
     ],
     stats: [
@@ -32,8 +32,8 @@ const CONTENT = {
       'Engenheiro de software com forte experiência em frontend e atuação full stack. Desenvolvo aplicações web modernas em produção, com foco em implementação de UI, integração de APIs e entrega confiável.',
     focusAreas: [
       {
-        title: 'Engenharia de ecommerce em produção',
-        description: 'Experiência entregando features de storefront para múltiplas marcas em VTEX, Shopify, Wake e Deco.cx.'
+        title: 'Engenharia web em produção',
+        description: 'Experiência entregando features web em produção em diferentes plataformas, incluindo VTEX, Shopify, Wake e Deco.cx.'
       },
       {
         title: 'Frontend como base, full stack na prática',
@@ -41,7 +41,7 @@ const CONTENT = {
       },
       {
         title: 'Visão de sistemas e escala',
-        description: 'Foco em decisões de arquitetura, melhorias de performance e construção de SaaS que evoluem com o produto.'
+        description: 'Foco em decisões de arquitetura, melhorias de performance e construção de sistemas escaláveis que evoluem com o produto.'
       }
     ],
     stats: [

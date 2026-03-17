@@ -5,14 +5,14 @@ const CONTENT = {
   en: {
     title: 'Professional Experience',
     subtitle:
-      'Production engineering experience across ecommerce storefronts, frontend delivery, and API-driven integrations.',
+      'Production engineering experience across web applications, frontend delivery, and API-driven integrations.',
     experiences: [
       {
         company: 'Econverse',
         role: 'Frontend Developer',
         period: 'Mar 2025 – present',
         summary:
-          'Develop and maintain storefront applications for multiple ecommerce brands, with focus on production quality, UI performance, and integration reliability.',
+          'Develop and maintain web applications for multiple brands, with focus on production quality, UI performance, and integration reliability.',
         achievements: [
           'Build and maintain features using React, TypeScript, HTML, CSS, and SASS.',
           'Integrate frontend flows with Node.js and GraphQL backend services.',
@@ -28,12 +28,12 @@ const CONTENT = {
         role: 'Software Developer Intern',
         period: 'Jun 2024 – Mar 2025',
         summary:
-          'Contributed to ecommerce client deliveries by building frontend components and connecting them to backend APIs.',
+          'Contributed to client web application deliveries by building frontend components and connecting them to backend APIs.',
         achievements: [
-          'Developed storefront UI components with HTML, CSS, and JavaScript.',
+          'Developed reusable UI components with HTML, CSS, and JavaScript.',
           'Built product features with React and TypeScript.',
           'Integrated frontend interfaces with backend APIs.',
-          'Collaborated with development teams delivering client-focused ecommerce features.'
+          'Collaborated with development teams delivering client-focused web features.'
         ],
         technologies: 'React · TypeScript · JavaScript · HTML · CSS · SASS · APIs'
       }
@@ -42,14 +42,14 @@ const CONTENT = {
   pt: {
     title: 'Experiências Profissionais',
     subtitle:
-      'Experiência em engenharia de software para ecommerce em produção, com entrega frontend e integrações orientadas a APIs.',
+      'Experiência em engenharia de software para aplicações web em produção, com entrega frontend e integrações orientadas a APIs.',
     experiences: [
       {
         company: 'Econverse',
         role: 'Desenvolvedor Frontend',
         period: 'mar 2025 – atual',
         summary:
-          'Desenvolvimento e manutenção de storefronts para múltiplas marcas de ecommerce, com foco em qualidade de produção, performance de UI e confiabilidade de integrações.',
+          'Desenvolvimento e manutenção de aplicações web para múltiplas marcas, com foco em qualidade de produção, performance de UI e confiabilidade de integrações.',
         achievements: [
           'Construção e manutenção de features com React, TypeScript, HTML, CSS e SASS.',
           'Integração de fluxos frontend com serviços Node.js e GraphQL.',
@@ -65,12 +65,12 @@ const CONTENT = {
         role: 'Estagiário em Desenvolvimento de Software',
         period: 'jun 2024 – mar 2025',
         summary:
-          'Contribuição em entregas para clientes de ecommerce com construção de componentes frontend e integração com APIs backend.',
+          'Contribuição em entregas de aplicações web para clientes com construção de componentes frontend e integração com APIs backend.',
         achievements: [
-          'Desenvolvimento de componentes de storefront com HTML, CSS e JavaScript.',
+          'Desenvolvimento de componentes de UI com HTML, CSS e JavaScript.',
           'Construção de funcionalidades com React e TypeScript.',
           'Integração de interfaces frontend com APIs backend.',
-          'Colaboração com times de desenvolvimento na entrega de funcionalidades para clientes de ecommerce.'
+          'Colaboração com times de desenvolvimento na entrega de funcionalidades web para clientes.'
         ],
         technologies: 'React · TypeScript · JavaScript · HTML · CSS · SASS · APIs'
       }
