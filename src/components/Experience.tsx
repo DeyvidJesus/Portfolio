@@ -5,106 +5,74 @@ const CONTENT = {
   en: {
     title: 'Professional Experience',
     subtitle:
-      'Backend ownership, architecture, and production delivery across SaaS and enterprise ecommerce.',
+      'Production engineering experience across ecommerce storefronts, frontend delivery, and API-driven integrations.',
     experiences: [
       {
-        company: 'GoMech',
-        role: 'Co-Founder & Software Engineer',
-        period: 'Jul 2025 – present',
-        summary:
-          'Co-founded the product and owned the technical architecture for an automotive service management SaaS.',
-        achievements: [
-          'Built backend services with Java and Spring Boot.',
-          'Implemented authentication, authorization, and core business logic.',
-          'Designed and maintained PostgreSQL data models.',
-          'Built frontend applications with React and TypeScript.',
-          'Deployed services with Docker on cloud/VPS infrastructure.',
-          'Owned technical decisions, feature delivery, and system evolution.'
-        ],
-        technologies:
-          'Java · Spring Boot · PostgreSQL · React · TypeScript · Docker'
-      },
-      {
         company: 'Econverse',
-        role: 'Frontend / Full Stack Developer',
+        role: 'Frontend Developer',
         period: 'Mar 2025 – present',
         summary:
-          'Worked on an enterprise ecommerce platform, building frontend and backend features for production applications.',
+          'Develop and maintain storefront applications for multiple ecommerce brands, with focus on production quality, UI performance, and integration reliability.',
         achievements: [
-          'Developed and maintained high-traffic production applications.',
-          'Built and integrated backend services with Node.js and GraphQL.',
-          'Worked extensively with React, Next.js, and TypeScript.',
-          'Improved performance, reliability, and developer experience.',
-          'Collaborated with product, backend, and business teams.',
-          'Participated in code reviews and agile ceremonies.'
+          'Build and maintain features using React, TypeScript, HTML, CSS, and SASS.',
+          'Integrate frontend flows with Node.js and GraphQL backend services.',
+          'Improve responsiveness, UI consistency, and performance across storefront platforms.',
+          'Work across VTEX, Shopify, Wake, and Deco.cx environments.',
+          'Lead development for VTEX FastStore clients.',
+          'Participate in technical discussions with clients to define feasible implementation strategies.'
         ],
-        technologies: 'React · Next.js · TypeScript · Node.js · GraphQL · SASS · Tailwind CSS'
+        technologies: 'React · TypeScript · HTML · CSS · SASS · Node.js · GraphQL · VTEX · Shopify · Wake · Deco.cx'
       },
       {
         company: 'Econverse',
-        role: 'Frontend Developer Intern',
+        role: 'Software Developer Intern',
         period: 'Jun 2024 – Mar 2025',
         summary:
-          'Built UI components and integrated APIs as part of agile delivery.',
+          'Contributed to ecommerce client deliveries by building frontend components and connecting them to backend APIs.',
         achievements: [
-          'Built responsive UI components with React, HTML, CSS, and SASS.',
-          'Integrated REST APIs.',
-          'Worked in agile teams (planning, reviews, retrospectives).'
+          'Developed storefront UI components with HTML, CSS, and JavaScript.',
+          'Built product features with React and TypeScript.',
+          'Integrated frontend interfaces with backend APIs.',
+          'Collaborated with development teams delivering client-focused ecommerce features.'
         ],
-        technologies: 'React · JavaScript · HTML · CSS · SASS · REST APIs'
+        technologies: 'React · TypeScript · JavaScript · HTML · CSS · SASS · APIs'
       }
     ]
   },
   pt: {
     title: 'Experiências Profissionais',
     subtitle:
-      'Ownership de backend, arquitetura e entrega em produção em SaaS e ecommerce enterprise.',
+      'Experiência em engenharia de software para ecommerce em produção, com entrega frontend e integrações orientadas a APIs.',
     experiences: [
       {
-        company: 'GoMech',
-        role: 'Co-Fundador & Engenheiro de Software',
-        period: 'jul 2025 – atual',
-        summary:
-          'Co-fundei o produto e assumi a arquitetura técnica de um SaaS de gestão automotiva.',
-        achievements: [
-          'Construí serviços backend com Java e Spring Boot.',
-          'Implementei autenticação, autorização e lógica de negócio.',
-          'Modelei e mantive dados relacionais em PostgreSQL.',
-          'Desenvolvi aplicações frontend com React e TypeScript.',
-          'Realizei deploys com Docker em infraestrutura cloud/VPS.',
-          'Assumi decisões técnicas, entrega de features e evolução do sistema.'
-        ],
-        technologies:
-          'Java · Spring Boot · PostgreSQL · React · TypeScript · Docker'
-      },
-      {
         company: 'Econverse',
-        role: 'Desenvolvedor Frontend / Full Stack',
+        role: 'Desenvolvedor Frontend',
         period: 'mar 2025 – atual',
         summary:
-          'Atuação em plataforma enterprise de ecommerce com entregas frontend e backend em produção.',
+          'Desenvolvimento e manutenção de storefronts para múltiplas marcas de ecommerce, com foco em qualidade de produção, performance de UI e confiabilidade de integrações.',
         achievements: [
-          'Desenvolvi e mantive aplicações de alto tráfego em produção.',
-          'Construí e integrei serviços backend com Node.js e GraphQL.',
-          'Trabalhei com React, Next.js e TypeScript.',
-          'Melhorei performance, confiabilidade e experiência de desenvolvimento.',
-          'Colaborei com times de produto, backend e negócio.',
-          'Participei de code reviews e cerimônias ágeis.'
+          'Construção e manutenção de features com React, TypeScript, HTML, CSS e SASS.',
+          'Integração de fluxos frontend com serviços Node.js e GraphQL.',
+          'Melhorias de responsividade, consistência de UI e performance entre plataformas.',
+          'Atuação nos ecossistemas VTEX, Shopify, Wake e Deco.cx.',
+          'Liderança de desenvolvimento para clientes VTEX FastStore.',
+          'Participação em discussões técnicas com clientes para definir estratégias de implementação viáveis.'
         ],
-        technologies: 'React · Next.js · TypeScript · Node.js · GraphQL · SASS · Tailwind CSS'
+        technologies: 'React · TypeScript · HTML · CSS · SASS · Node.js · GraphQL · VTEX · Shopify · Wake · Deco.cx'
       },
       {
         company: 'Econverse',
-        role: 'Estagiário em Desenvolvimento Frontend',
+        role: 'Estagiário em Desenvolvimento de Software',
         period: 'jun 2024 – mar 2025',
         summary:
-          'Construção de componentes de UI e integrações com APIs em times ágeis.',
+          'Contribuição em entregas para clientes de ecommerce com construção de componentes frontend e integração com APIs backend.',
         achievements: [
-          'Criei componentes responsivos com React, HTML, CSS e SASS.',
-          'Integrei APIs REST.',
-          'Atuei em times ágeis (planning, reviews, retrospectives).'
+          'Desenvolvimento de componentes de storefront com HTML, CSS e JavaScript.',
+          'Construção de funcionalidades com React e TypeScript.',
+          'Integração de interfaces frontend com APIs backend.',
+          'Colaboração com times de desenvolvimento na entrega de funcionalidades para clientes de ecommerce.'
         ],
-        technologies: 'React · JavaScript · HTML · CSS · SASS · APIs REST'
+        technologies: 'React · TypeScript · JavaScript · HTML · CSS · SASS · APIs'
       }
     ]
   }
