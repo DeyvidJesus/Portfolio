@@ -28,7 +28,7 @@ export function ResponsiveMenu({ items }: ResponsiveMenuProps) {
   const closeMenu = () => setIsOpened(false);
 
   return (
-    <div className="md:hidden">
+    <div className="lg:hidden">
       <button
         onClick={() => setIsOpened(prev => !prev)}
         className="relative z-50 rounded-full border border-slate-300 dark:border-white/10 bg-slate-100 dark:bg-white/5 p-2 text-slate-900 dark:text-white transition hover:border-aurora dark:hover:border-neon/60 hover:text-aurora dark:hover:text-neon"
