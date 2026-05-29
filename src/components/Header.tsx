@@ -7,18 +7,18 @@ import { useLanguage } from '../hooks/useLanguage';
 const NAV_ITEMS = {
   en: [
     { label: 'Home', href: '#inicio' },
-    { label: 'Summary', href: '#resumo' },
     { label: 'Experience', href: '#experiencias' },
     { label: 'Projects', href: '#projetos' },
-    { label: 'Skills', href: '#habilidades' },
+    { label: 'Focus', href: '#foco' },
+    { label: 'Building', href: '#construindo' },
     { label: 'Contact', href: '#contato' }
   ],
   pt: [
     { label: 'Início', href: '#inicio' },
-    { label: 'Resumo', href: '#resumo' },
-    { label: 'Experiências', href: '#experiencias' },
+    { label: 'Experiência', href: '#experiencias' },
     { label: 'Projetos', href: '#projetos' },
-    { label: 'Habilidades', href: '#habilidades' },
+    { label: 'Foco', href: '#foco' },
+    { label: 'Construindo', href: '#construindo' },
     { label: 'Contato', href: '#contato' }
   ]
 };
@@ -54,14 +54,14 @@ export function Header() {
       <div className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4">
         <a href="#inicio" className="flex items-center gap-3 text-lg font-semibold tracking-tight text-slate-900 dark:text-white">
           <span className="rounded-full bg-gradient-to-r from-aurora/20 via-sunrise/25 to-skyglass/30 px-3 py-1 text-sm font-medium text-aurora dark:text-neon">
-            Fullstack
+            Software Engineer
           </span>
           <span className="font-serif text-xl bg-gradient-to-r from-slate-900 via-aurora to-coral bg-clip-text text-transparent dark:bg-none dark:text-white">
             Deyvid Gondim
           </span>
         </a>
 
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700 dark:text-slate/90">
+        <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-700 dark:text-slate/90">
           {navItems.map(item => (
             <a
               key={item.href}
@@ -73,7 +73,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-3">
           <LanguageToggle />
           <ThemeToggle />
           <a

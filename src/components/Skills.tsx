@@ -3,62 +3,76 @@ import { useLanguage } from '../hooks/useLanguage';
 
 const CONTENT = {
   en: {
-    title: 'Stack & Skills',
-    subtitle: 'Core technologies used in production web application development and full-stack delivery.',
-    groups: [
+    title: 'Engineering Focus',
+    subtitle:
+      'The portfolio now organizes skills around engineering capability areas that matter to product teams, not percentage bars or isolated keywords.',
+    areas: [
       {
-        title: 'Languages',
-        items: ['JavaScript', 'TypeScript', 'Java', 'Python']
+        title: 'Backend architecture',
+        description: 'Service boundaries, domain modeling, relational data, Java/Spring Boot evolution and API reliability.',
+        proof: 'GoMech and Alerta360 emphasize backend-first decisions and maintainable service design.'
       },
       {
-        title: 'Frontend',
-        items: ['React', 'HTML', 'CSS', 'SASS']
+        title: 'API design and integration',
+        description: 'GraphQL, REST, Node.js integrations, typed frontend contracts and resilient data flows.',
+        proof: 'Production commerce work at Econverse connects user experiences to platform and backend services.'
       },
       {
-        title: 'Backend',
-        items: ['Node.js', 'GraphQL', 'REST APIs', 'Spring Boot']
+        title: 'SaaS development',
+        description: 'Multi-module product thinking, user workflows, billing-ready foundations, deployment concerns and iteration.',
+        proof: 'GoMech is positioned as a SaaS product with durable architecture rather than a portfolio demo.'
       },
       {
-        title: 'Platforms',
-        items: ['VTEX', 'Shopify', 'Wake', 'Deco.cx', 'WordPress']
+        title: 'Cloud systems',
+        description: 'AWS Cloud Practitioner preparation, Dockerized environments, deployment fundamentals and cloud architecture vocabulary.',
+        proof: 'Current study path supports future cloud-ready product delivery and infrastructure collaboration.'
       },
       {
-        title: 'DevOps & Tooling',
-        items: ['Docker', 'CI/CD', 'Git', 'Linux', 'Google Cloud']
+        title: 'Product engineering',
+        description: 'Business problem framing, usable interfaces, technical tradeoffs and shipping increments that reduce user friction.',
+        proof: 'Projects describe problem, solution, decisions and business value so hiring teams see judgment, not only stack.'
       },
       {
-        title: 'Concepts',
-        items: ['Headless Commerce', 'API Design', 'System Architecture']
+        title: 'Scalable applications',
+        description: 'Performance-aware React/Next.js work, maintainable TypeScript, data contracts and systems that can evolve.',
+        proof: 'Econverse experience proves production delivery across platforms with real users and commerce constraints.'
       }
     ]
   },
   pt: {
-    title: 'Stack & Habilidades',
-    subtitle: 'Tecnologias centrais usadas no desenvolvimento de aplicações web em produção e implementação full stack.',
-    groups: [
+    title: 'Foco de Engenharia',
+    subtitle:
+      'O portfólio organiza habilidades por capacidades de engenharia relevantes para times de produto, sem barras de porcentagem ou palavras-chave soltas.',
+    areas: [
       {
-        title: 'Linguagens',
-        items: ['JavaScript', 'TypeScript', 'Java', 'Python']
+        title: 'Arquitetura backend',
+        description: 'Fronteiras de serviço, modelagem de domínio, dados relacionais, evolução com Java/Spring Boot e confiabilidade de APIs.',
+        proof: 'GoMech e Alerta360 destacam decisões backend-first e desenho de serviços sustentáveis.'
       },
       {
-        title: 'Frontend',
-        items: ['React', 'HTML', 'CSS', 'SASS']
+        title: 'Design e integração de APIs',
+        description: 'GraphQL, REST, integrações Node.js, contratos tipados no frontend e fluxos de dados resilientes.',
+        proof: 'A atuação em produção na Econverse conecta experiências de usuário a plataformas e serviços backend.'
       },
       {
-        title: 'Backend',
-        items: ['Node.js', 'GraphQL', 'APIs REST', 'Spring Boot']
+        title: 'Desenvolvimento SaaS',
+        description: 'Visão de produto multi-módulo, workflows de usuário, base preparada para evolução, deploy e iteração.',
+        proof: 'GoMech é posicionado como produto SaaS com arquitetura durável, não como demo de portfólio.'
       },
       {
-        title: 'Plataformas',
-        items: ['VTEX', 'Shopify', 'Wake', 'Deco.cx', 'WordPress']
+        title: 'Sistemas cloud',
+        description: 'Preparação AWS Cloud Practitioner, ambientes Dockerizados, fundamentos de deploy e vocabulário de arquitetura cloud.',
+        proof: 'A trilha atual de estudos apoia entregas cloud-ready e colaboração com infraestrutura.'
       },
       {
-        title: 'DevOps & Ferramentas',
-        items: ['Docker', 'CI/CD', 'Git', 'Linux', 'Google Cloud']
+        title: 'Product engineering',
+        description: 'Enquadramento de problema de negócio, interfaces usáveis, tradeoffs técnicos e entregas incrementais que reduzem atrito.',
+        proof: 'Projetos descrevem problema, solução, decisões e valor de negócio para evidenciar julgamento, não só stack.'
       },
       {
-        title: 'Conceitos',
-        items: ['Headless Commerce', 'Design de APIs', 'Arquitetura de Sistemas']
+        title: 'Aplicações escaláveis',
+        description: 'React/Next.js com atenção a performance, TypeScript sustentável, contratos de dados e sistemas evolutivos.',
+        proof: 'A experiência na Econverse prova entrega em produção entre plataformas com usuários reais e restrições de comércio.'
       }
     ]
   }
@@ -69,35 +83,28 @@ export function Skills() {
   const content = CONTENT[language];
 
   return (
-    <section id="habilidades" className="relative mx-auto max-w-[1440px] px-6 py-24">
+    <section id="foco" className="relative mx-auto max-w-[1440px] px-6 py-24" aria-labelledby="focus-title">
       <div className="pointer-events-none absolute inset-x-6 top-16 -z-10 h-[420px] rounded-[36px] bg-light-layer opacity-90 blur-2xl dark:hidden" />
       <div className="pointer-events-none absolute inset-x-12 top-24 -z-10 hidden h-[420px] rounded-[32px] bg-gradient-to-r from-charcoal/85 via-midnight/80 to-charcoal/85 blur-3xl dark:block" />
       <Reveal>
         <div className="flex flex-col gap-4">
-          <h2 className="section-title text-slate-900 dark:text-white">{content.title}</h2>
-          <p className="section-subtitle">
-            {content.subtitle}
-          </p>
+          <h2 id="focus-title" className="section-title text-slate-900 dark:text-white">{content.title}</h2>
+          <p className="section-subtitle">{content.subtitle}</p>
         </div>
       </Reveal>
 
-      <div className="mt-12 grid gap-6 md:grid-cols-2">
-        {content.groups.map((group, index) => (
-          <Reveal key={group.title} delay={index * 120}>
-            <div className="glass-panel relative h-full overflow-hidden rounded-2xl border border-white/70 bg-white/85 p-6 shadow-aurora backdrop-blur-sm dark:border-white/10 dark:bg-white/5 dark:shadow-card">
+      <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {content.areas.map((area, index) => (
+          <Reveal key={area.title} delay={index * 90}>
+            <article className="glass-panel relative h-full overflow-hidden rounded-2xl border border-white/70 bg-white/85 p-6 shadow-aurora backdrop-blur-sm dark:border-white/10 dark:bg-white/5 dark:shadow-card">
               <span className="pointer-events-none absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-aurora via-emerald-400 to-sunrise dark:from-neon dark:via-emerald-400 dark:to-aurora" />
-              <h3 className="text-lg font-semibold text-slate-900 dark:text-white">{group.title}</h3>
-              <ul className="mt-4 flex flex-wrap gap-3 text-sm text-slate-700 dark:text-slate/90">
-                {group.items.map(item => (
-                  <li
-                    key={item}
-                    className="rounded-full border border-aurora/20 bg-white/80 px-3 py-1 text-xs uppercase tracking-wide text-aurora/80 shadow-[0_12px_24px_-18px_rgba(31,157,109,0.65)] backdrop-blur-sm dark:border-white/10 dark:bg-white/5 dark:text-neon/80"
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white">{area.title}</h3>
+              <p className="mt-3 text-sm leading-6 text-slate-700 dark:text-slate/90">{area.description}</p>
+              <p className="mt-5 rounded-2xl border border-aurora/15 bg-white/60 p-4 text-xs leading-5 text-slate-600 dark:border-white/10 dark:bg-white/[0.03] dark:text-slate/80">
+                <strong className="text-aurora dark:text-neon">{language === 'en' ? 'Proof: ' : 'Prova: '}</strong>
+                {area.proof}
+              </p>
+            </article>
           </Reveal>
         ))}
       </div>

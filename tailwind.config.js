@@ -13,8 +13,8 @@ export default {
       xl: '1440px'
     },
     fontFamily: {
-      sansSerif: ['Poppins', 'sans-serif'],
-      serif: ['Montserrat', 'sans-serif'],
+      sansSerif: ['Inter', 'sans-serif'],
+      serif: ['Inter', 'sans-serif'],
       mono: ['JetBrains Mono', 'monospace']
     },
     extend: {

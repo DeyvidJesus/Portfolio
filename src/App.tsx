@@ -4,6 +4,7 @@ import { About } from './components/About';
 import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
+import { CurrentlyBuilding } from './components/CurrentlyBuilding';
 import { Contact } from './components/Contact';
 import BackToTopButton from './components/BackToTopBtn';
 import { ThemeProvider } from './contexts/ThemeContext';
@@ -18,8 +19,8 @@ function AppContent() {
       : 'Construído por ';
   const footerRole =
     language === 'en'
-      ? 'Software Engineer · Full Stack Developer (Backend-focused)'
-      : 'Engenheiro de Software · Desenvolvedor Full Stack (Foco em Backend)';
+      ? 'Software Engineer · Full Stack Engineer · SaaS Builder'
+      : 'Engenheiro de Software · Full Stack Engineer · SaaS Builder';
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-white dark:bg-night text-slate-900 dark:text-white transition-colors duration-300">
@@ -39,6 +40,7 @@ function AppContent() {
         <Experience />
         <Projects />
         <Skills />
+        <CurrentlyBuilding />
         <Contact />
       </main>
       <footer className="border-t border-slate-200/60 bg-gradient-to-r via-skyglass/70 to-white/90 py-8 text-center text-sm text-slate-600 backdrop-blur-md dark:border-white/5 dark:bg-charcoal/70 dark:text-slate/80">
